@@ -1,0 +1,213 @@
+:root {
+    /* Color */
+    --red: #ec0000;
+    --black: #000000;
+    --navy: #264d73;
+
+    /* Font family */
+    --font: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+
+ul,
+a {
+    text-decoration: none;
+    list-style-type: none;
+    color: var(--black);
+}
+
+/* Button */
+.btn {
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+/* Navbar */
+.nav__heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 1rem;
+    border-bottom: 1px var(--black) solid;
+}
+
+.nav__heading-items {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__navigation {
+    border-bottom: 1px solid var(--black);
+    padding: 1rem;
+}
+
+.nav__navigation-items {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+/* Showcase  */
+.showcase-container {
+    background-color: blue;
+    height: 300px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.mobile-item {
+    display: none;
+}
+
+.carousel {
+    position: relative;
+    height: 300px;
+}
+
+.carousel__viewport {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+
+.carousel__slide {
+    position: relative;
+    flex: 0 0 100%;
+    width: 100%;
+    height: 100%;
+}
+
+#carousel__slide1 {
+    background-image: url("../images/rally-car-meetup1.jpg");
+}
+
+#carousel__slide2 {
+    background-image: url("../images/vintageCarRallying.jpeg");
+}
+
+#carousel__slide3 {
+    background-image: url("../images/ModernRallyingCars/imperaza.jpeg");
+}
+
+#carousel__slide4 {
+    background-image: url("../images/ModernRallyingCars/MgMetro6r4.jpg");
+}
+
+.carousel__slider-btn {
+    padding: 0 10px;
+    display: flex;
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    padding: 1rem;
+}
+
+.container__header {
+    font-size: 1.5rem;
+}
+
+.container__text {
+    min-width: 100px;
+    max-width: 50%;
+}
+
+.container__content {
+    display: flex;
+}
+
+.map-iframe {
+    width: 50%;
+    height: 350px;
+    border: 0;
+}
+
+
+/* Footer */
+.social-media__links {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    width: 20px;
+    margin: 10px;
+}
+
+.footer-menu {
+    display: flex;
+    justify-content: space-evenly;
+    flex-basis: 300px;
+    flex: 100px 100px 50px;
+}
+
+.footer-menu div:last-child {
+    width: 50%;
+}
+
+@media only screen and (max-width:750px) {
+    .nav__heading-items {
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav__navigation {
+        position: absolute;
+        padding: 2rem;
+        height: 100vh;
+        top: 0;
+        right: -500px;
+        width: 50%;
+        z-index: 10;
+        background-color: red;
+    }
+
+    .nav__navigation-items {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .nav__navigation-items li {
+        margin: 5px;
+    }
+
+    .mobile-item {
+        display: block;
+    }
+
+    .footer-menu {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-menu div {
+        margin: 10px;
+    }
+}
