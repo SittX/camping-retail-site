@@ -29,6 +29,53 @@ a {
     padding: 5px 10px;
 }
 
+/* Modal Pop-up menu */
+/* Popup container */
+/* .popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    background-color: red;
+    height: 100vh;
+    width: 100%;
+} */
+
+
+.popup__content {
+    max-width: 500px;
+    min-width: 300px;
+    background-color: red;
+    min-height: 350px;
+    max-height: 500px;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 10;
+    padding: 1rem;
+}
+
+.popup__form {
+    display: flex;
+    column-gap: 1rem;
+}
+
+.form__input {
+    height: 30px;
+    border: none;
+    padding: 0 10px 0 10px;
+    border-radius: 5px;
+}
+
+.form__input:focus {
+    outline: none;
+}
+
+
 /* Navbar */
 .nav__heading {
     display: flex;
@@ -196,6 +243,25 @@ a {
     .nav__navigation-items li {
         margin: 5px;
     }
+
+    .icon {
+        margin: 0;
+    }
+
+    .about-us {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .container__text {
+        max-width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .map-iframe {
+        width: 100%
+    }
+
 
     .mobile-item {
         display: block;

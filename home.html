@@ -13,6 +13,18 @@
 </head>
 
 <body>
+    <div class="popup" id="popup" onload="modalPopUp()">
+        <div class="popup__content">
+            <span class="popuptext" id="myPopup">Popup text...</span>
+            <p class="popup__text">Subscribe to our newsletter!</p>
+            <form action="" class="popup__form">
+                <input type="email" name="user_email" id="newsletter-email" class="form__input"
+                    placeholder="Enter your email address here">
+                <input type="submit" value="Subscribe">
+            </form>
+            <button class="popup__close-btn" onclick="popupClose()">Close</button>
+        </div>
+    </div>
     <nav>
         <div class="nav__heading">
             <a href="#" class="nav__heading-brand">Logo</a>
@@ -80,7 +92,7 @@
 
     <section class="container">
         <div class="container__header">About us</div>
-        <div class="container__content">
+        <div class="container__content about-us">
             <p class="container__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates obcaecati
                 tempora voluptatibus veniam quae assumenda minima voluptas soluta cumque quidem. Iusto sint ab optio,
                 deleniti exercitationem odit quo et quibusdam consequuntur soluta eligendi, dolorum eum eveniet culpa ea
