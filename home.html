@@ -13,20 +13,23 @@
 </head>
 
 <body>
-    <div class="popup" id="popup" onload="modalPopUp()">
-        <div class="popup__content">
-            <p class="popup__text">New deals and package are happening in this season of the year.</p>
-            <p class="popup__text">To keep up to date about new deals and promotions, you can subscribe to our weekly
-                newsletter which includes offers and deals for our products.</p>
-            <p class="popup__text">Subscribe to our newsletter!</p>
-            <form action="" class="popup__form">
-                <input type="email" name="user_email" id="newsletter-email" class="popup__form-input"
+
+    <div class="modal__container" id="modal-container">
+        <div class="modal">
+            <p class="modal__title"></p>
+            <p class="modal__text">New deals and package are happening in this season of the year.</p>
+            <p class="modal__text">Subscribe to our newsletter!</p>
+            <form action="" class="modal__form">
+                <input type="email" name="user_email" id="newsletter-email" class="modal__form-input"
                     placeholder="Enter your email address here">
-                <input type="submit" value="Subscribe" class="btn">
+                <input type="submit" value="Subscribe" class="btn btn--secondary">
             </form>
-            <button class="popup__close-btn btn" onclick="popupClose()">Close</button>
+            <button class="btn btn--close" onclick="closeModal()">Close X </button>
         </div>
     </div>
+
+
+
     <nav>
         <div class="nav__heading">
             <a href="#" class="nav__heading-brand"><img src="/assets/icons/camping_logo.webp" alt="camping company logo"
@@ -208,7 +211,7 @@
             </div>
         </section>
     </footer>
-    <script src="js/main.js"></script>
+    <script src="/js/main.js"></script>
 </body>
 
 </html>

@@ -84,6 +84,39 @@ a {
     opacity: 70%;
 }
 
+.modal__container {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s opacity 0.5s;
+}
+
+.modal--active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal {
+    background-color: rgb(92, 95, 246);
+    width: 50%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+}
 
 
 /* Button */
@@ -91,6 +124,7 @@ a {
     border: none;
     border-radius: 5px;
     padding: 5px 10px;
+    cursor: pointer;
 }
 
 .btn--submit {
@@ -101,10 +135,25 @@ a {
     border-radius: 5px;
 }
 
+.btn--close {
+    background-color: #fa3c3c;
+    color: white;
+}
+
+.btn--secondary {
+    color: white;
+    background: var(--navy);
+}
+
+
+
 .btn:hover,
 .btn--submit:hover {}
 
-.popup__content {
+
+
+
+.modal__content {
     max-width: 500px;
     min-width: 300px;
     background-color: var(--navy);
@@ -122,20 +171,20 @@ a {
     padding: 1rem;
 }
 
-.popup__form {
+.modal__form {
     margin: 1rem 0;
     display: flex;
     column-gap: 1rem;
 }
 
-.popup__form-input {
+.modal__form-input {
     height: 30px;
     border: none;
     padding: 0 10px 0 10px;
     border-radius: 5px;
 }
 
-.popup__form-input:focus {
+.modal__form-input:focus {
     outline: none;
 }
 
