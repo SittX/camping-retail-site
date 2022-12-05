@@ -24,3 +24,6 @@ This  page  provides  acatalogue  of  the  most  popular equipment that is sold
 ## Referenced Websites 
 https://www.tradeinn.com/trekkinn/en/camping-camping-equipment/12613/s
 https://www.campmor.com
+
+## Website plugins
+https://blog.hubspot.com/marketing/website-plugins

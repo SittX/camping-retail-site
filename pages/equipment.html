@@ -13,7 +13,191 @@
 </head>
 
 <body>
+    <nav>
+        <div class="nav__heading">
+            <a href="../home.html" class="nav__heading-brand"><img src="/assets/icons/camping_logo.webp"
+                    alt="camping company logo" class="nav__logo"></a>
+            <ul class="nav__heading-items">
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Sign up</a></li>
+                <li><a href="#">
+                        <img src="/assets/icons/shopping_cart.svg" alt="shopping cart icon" class="icon">
+                        Basket</a></li>
+                <div class="menu__open-btn mobile-item" onclick="openMenu()"><img src="/assets/icons/hamburger_menu.svg"
+                        class="icon" alt="menu open button"></div>
+            </ul>
+        </div>
+        <div class="nav__navigation" id="mobile-menu">
+            <div class="menu__close-btn mobile-item" onclick="closeMenu()"><img src="/assets/icons/menu_close.svg"
+                    alt="menu close button" class="icon"></div>
+            <ul class="nav__navigation-items">
+                <li><a href="equipment.html">
+                        <img src="/assets/icons/camping.svg" alt="camping icon" class="icon">
+                        Camping Equipments</a></li>
+                <li><a href="furniture.html">
+                        <img src="/assets/icons/furniture.svg" alt="furniture icon" class="icon">
+                        Furnitures</a></li>
+                <li><a href="offersAndPackages.html">
+                        <img src="/assets/icons/sell.svg" alt="sell icon" class="icon">
+                        Offers and packages</a></li>
+                <li><a href="reviews.html">
+                        <img src="/assets/icons/review.svg" alt="reviews icon" class="icon">
+                        Reviews</a></li>
+            </ul>
+        </div>
+    </nav>
 
+    <main class="catalogue__wrapper container">
+        <div class="catalogue__filter">
+            <!-- This will contain filters (flex-grow : 0)-->
+            <form action="" class="catalogue__category-selection-form" onsubmit="return false">
+                <fieldset>
+                    <legend>Category</legend>
+                    <input type="checkbox" name="camping-equipments" id="camping-equipments">
+                    <label for="camping-equipments">Camping Equipments</label>
+                    <br>
+                    <input type="checkbox" name="furnitures" id="furnitures">
+                    <label for="furnitures">Furnitures</label>
+                    <br>
+                    <input type="checkbox" name="offers" id="offers">
+                    <label for="offers">Offers</label>
+                    <br>
+                </fieldset>
+                <input type="submit" value="Search" class="btn--submit">
+            </form>
+
+            <form action="" class="catalogue__vendor-selection-form" onsubmit="return false">
+                <fieldset>
+                    <legend>Product's vendor</legend>
+                    <input type="checkbox" name="" id="eureka">
+                    <label for="eureka">Eureka</label>
+                    <br>
+                    <input type="checkbox" name="" id="apls-mountaineering">
+                    <label for="apls-mountaineering">Apls Mountaineering</label>
+                    <br>
+                    <input type="checkbox" name="" id="helinox">
+                    <label for="helinox">Helinox</label>
+                    <br>
+                    <input type="checkbox" name="" id="uco">
+                    <label for="uco">UCO</label>
+                    <br>
+                    <input type="checkbox" name="" id="gsi-outdoors">
+                    <label for="gsi-outdoors">GSI Outdoors</label>
+                    <br>
+                    <input type="checkbox" name="" id="biolite">
+                    <label for="biolite">BioLite</label>
+                    <br>
+                    <input type="checkbox" name="" id="goal-zero">
+                    <label for="goal-zero">Goal Zero</label>
+                    <br>
+                    <input type="checkbox" name="" id="sunnto">
+                    <label for="sunnto">Sunnto</label>
+                    <br>
+                    <input type="checkbox" name="" id="cura-outdoors">
+                    <label for="cura-outdoors">Cura Outdoors</label>
+                    <br>
+                    <input type="checkbox" name="" id="coleman">
+                    <label for="coleman">Coleman</label>
+                    <br>
+                    <input type="checkbox" name="" id="big-agnes">
+                    <label for="big-agnes">Big Agnes</label>
+                    <br>
+                    <input type="checkbox" name="" id="eagles-nest">
+                    <label for="eagles-nest">Eagles Nest Outfitters</label>
+                    <br>
+                </fieldset>
+                <input type="submit" value="Search" class="btn--submit">
+
+            </form>
+        </div>
+        <div class="catalogue__items-wrapper">
+            <!-- All items goes here (flex-grow : 2)-->
+            <section class="card__wrapper">
+                <div class="card card--secondary">
+                    <img src="/assets/images/camping_furniture.jpg" alt="camping furniture image"
+                        class="card__img card__img--secondary">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, veritatis!</p>
+                </div>
+
+                <div class="card card--secondary">
+                    <img src="/assets/images/camping_furniture.jpg" alt="camping furniture image"
+                        class="card__img card__img--secondary">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, blanditiis.</p>
+                </div>
+
+                <div class="card card--secondary">
+                    <img src="/assets/images/camping_furniture.jpg" alt="camping furniture image"
+                        class="card__img card__img--secondary">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus, ut.</p>
+                </div>
+
+            </section>
+
+        </div>
+    </main>
+
+
+    <footer>
+        <section class="social-media__links">
+            <div class="social-media__facebook">
+                <img src="/assets/icons/facebook.png" class="social-media__icon" alt="facebook icon">
+            </div>
+            <div class="social-media__twitter">
+                <img src="/assets/icons/twitter.png" class="social-media__icon" alt="twitter icon">
+            </div>
+            <div class="social-media__instagram">
+                <img src="/assets/icons/instagram.png" class="social-media__icon" alt="instagram icon">
+            </div>
+        </section>
+
+        <section class="footer-menu">
+            <div class="footer-menu__information">
+                <h3>Information</h3>
+                <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Offers and packages</a></li>
+                    <li><a href="#">Best sellers</a></li>
+                </ul>
+            </div>
+            <div class="footer-menu__account">
+                <h3>Account</h3>
+                <ul>
+                    <li><a href="#">Sign up</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Basket</a></li>
+                </ul>
+            </div>
+            <div class="footer-menu__store-details">
+                <h3>About the store</h3>
+                <ul>
+                    <li>
+                        <p>Campmor is a recreational equipment retailer that was established in Bogota, New Jersey in
+                            1978. The retail store is in Paramus, New Jersey, and offers much of what is offered online
+                            and more.</p>
+                    </li>
+                    <li>
+                        <img src="/assets/icons/home_pin.svg" class="icon" alt="home pin icon">
+                        <strong>810 Route 17 North Paramus, New Jersey 07652</strong>
+                    </li>
+                    <li>
+                        <img src="/assets/icons/phone.svg" class="icon" alt="phone icon">
+                        <strong>Phone: 1-201-445-5000</strong>
+                    </li>
+                    <li>
+                        Monday, Tuesday, Wednesday, Friday 10:00am - 5:00pm
+                    </li>
+                    <li>
+                        Thursday 10:00am-7:00pm
+                    </li>
+                    <li>
+                        Saturday 10:00am-5:00pm
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </footer>
+
+    <script src="/js/main.js"></script>
 </body>
 
 </html>

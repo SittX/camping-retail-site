@@ -15,23 +15,28 @@
 <body>
     <div class="popup" id="popup" onload="modalPopUp()">
         <div class="popup__content">
-            <span class="popuptext" id="myPopup">Popup text...</span>
+            <p class="popup__text">New deals and package are happening in this season of the year.</p>
+            <p class="popup__text">To keep up to date about new deals and promotions, you can subscribe to our weekly
+                newsletter which includes offers and deals for our products.</p>
             <p class="popup__text">Subscribe to our newsletter!</p>
             <form action="" class="popup__form">
-                <input type="email" name="user_email" id="newsletter-email" class="form__input"
+                <input type="email" name="user_email" id="newsletter-email" class="popup__form-input"
                     placeholder="Enter your email address here">
-                <input type="submit" value="Subscribe">
+                <input type="submit" value="Subscribe" class="btn">
             </form>
-            <button class="popup__close-btn" onclick="popupClose()">Close</button>
+            <button class="popup__close-btn btn" onclick="popupClose()">Close</button>
         </div>
     </div>
     <nav>
         <div class="nav__heading">
-            <a href="#" class="nav__heading-brand">Logo</a>
+            <a href="#" class="nav__heading-brand"><img src="/assets/icons/camping_logo.webp" alt="camping company logo"
+                    class="nav__logo"></a>
             <ul class="nav__heading-items">
                 <li><a href="#">Login</a></li>
                 <li><a href="#">Sign up</a></li>
-                <li><a href="#">Basket</a></li>
+                <li><a href="#">
+                        <img src="/assets/icons/shopping_cart.svg" alt="shopping cart icon" class="icon">
+                        Basket</a></li>
                 <div class="menu__open-btn mobile-item" onclick="openMenu()"><img src="/assets/icons/hamburger_menu.svg"
                         class="icon" alt="menu open button"></div>
             </ul>
@@ -40,19 +45,27 @@
             <div class="menu__close-btn mobile-item" onclick="closeMenu()"><img src="/assets/icons/menu_close.svg"
                     alt="menu close button" class="icon"></div>
             <ul class="nav__navigation-items">
-                <li><a href="#">Camping Equipments</a></li>
-                <li><a href="#">Furnitures</a></li>
-                <li><a href="#">Offers and packages</a></li>
-                <li><a href="#">Reviews</a></li>
+                <li><a href="/pages/equipment.html">
+                        <img src="/assets/icons/camping.svg" alt="camping icon" class="icon">
+                        Camping Equipments</a></li>
+                <li><a href="/pages/furniture.html">
+                        <img src="/assets/icons/furniture.svg" alt="furniture icon" class="icon">
+                        Furnitures</a></li>
+                <li><a href="/pages/offersAndPackages.html">
+                        <img src="/assets/icons/sell.svg" alt="sell icon" class="icon">
+                        Offers and packages</a></li>
+                <li><a href="/pages/reviews.html">
+                        <img src="/assets/icons/review.svg" alt="reviews icon" class="icon">
+                        Reviews</a></li>
             </ul>
         </div>
     </nav>
-    <div class="showcase-container">
-        <p>Sales are happening</p>
+    <div class="banner">
+        <p class="banner__header">Sales are happening</p>
         <button class="btn">Shop Now</button>
     </div>
 
-    <h3>Best sellers</h3>
+    <p class="container__header">Best sellers</p>
     <section class="carousel">
         <ul class="carousel__viewport">
             <li id="carousel__slide1" class="carousel__slide">
@@ -91,6 +104,38 @@
     </section>
 
     <section class="container">
+        <div class="container__header">
+            Categories
+        </div>
+        <div class="card__wrapper">
+            <div class="card">
+                <img src="/assets/images/camping_equipment.jpg" alt="camping equipments image" class="card__img">
+                <div class="card__overlay">
+                    <p class="card__overlay-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ut
+                        maiores eos quam eum repudiandae.</p>
+                    <a href="/pages/equipment.html">Shop > </a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="/assets/images/camping_furniture.jpg" alt="camping furniture image" class="card__img">
+                <div class="card__overlay">
+                    <p class="card__overlay-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ut
+                        maiores eos quam eum repudiandae.</p>
+                    <a href="/pages/furniture.html">Shop > </a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/assets/images/offers.png" alt="special offer image" class="card__img">
+                <div class="card__overlay">
+                    <p class="card__overlay-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ut
+                        maiores eos quam eum repudiandae.</p>
+                    <a href="/pages/offersAndPackages.html"> Shop > </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container">
         <div class="container__header">About us</div>
         <div class="container__content about-us">
             <p class="container__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates obcaecati
@@ -104,17 +149,16 @@
         </div>
     </section>
 
-
     <footer>
         <section class="social-media__links">
             <div class="social-media__facebook">
-                <img src="/assets/icons/facebook.png" class="icon" alt="facebook icon">
+                <img src="/assets/icons/facebook.png" class="social-media__icon" alt="facebook icon">
             </div>
             <div class="social-media__twitter">
-                <img src="/assets/icons/twitter.png" class="icon" alt="twitter icon">
+                <img src="/assets/icons/twitter.png" class="social-media__icon" alt="twitter icon">
             </div>
             <div class="social-media__instagram">
-                <img src="/assets/icons/instagram.png" class="icon" alt="instagram icon">
+                <img src="/assets/icons/instagram.png" class="social-media__icon" alt="instagram icon">
             </div>
         </section>
 
@@ -135,7 +179,7 @@
                     <li><a href="#">Basket</a></li>
                 </ul>
             </div>
-            <div class="footer-menu__about-store">
+            <div class="footer-menu__store-details">
                 <h3>About the store</h3>
                 <ul>
                     <li>
@@ -145,11 +189,11 @@
                     </li>
                     <li>
                         <img src="/assets/icons/home_pin.svg" class="icon" alt="home pin icon">
-                        810 Route 17 North Paramus, New Jersey 07652
+                        <strong>810 Route 17 North Paramus, New Jersey 07652</strong>
                     </li>
                     <li>
                         <img src="/assets/icons/phone.svg" class="icon" alt="phone icon">
-                        Phone: 1-201-445-5000
+                        <strong>Phone: 1-201-445-5000</strong>
                     </li>
                     <li>
                         Monday, Tuesday, Wednesday, Friday 10:00am - 5:00pm
