@@ -79,9 +79,16 @@ a {
     height: 60%;
 }
 
-
 .card--secondary:hover .card__img--secondary {
-    opacity: 70%;
+    opacity: 30%;
+}
+
+.card--secondary:hover .card__text {
+    color: blue;
+}
+
+.card--secondary:hover .price-tag {
+    color: unset;
 }
 
 .modal__container {
@@ -146,10 +153,8 @@ a {
 }
 
 
-
 .btn:hover,
 .btn--submit:hover {}
-
 
 
 
@@ -350,10 +355,24 @@ a {
 
 
 /* Equipment page */
+
+.catalogue__filter-fieldset {
+    width: 250px;
+}
+
 .catalogue__wrapper {
     display: flex;
     column-gap: .75rem;
 }
+
+.catalogue__filter {
+    width: 20%;
+}
+
+.catalogue__items-wrapper {
+    width: 80%;
+}
+
 
 @media only screen and (max-width:750px) {
     .nav__heading-items {
