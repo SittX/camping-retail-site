@@ -42,9 +42,9 @@ a {
     border-radius: 5px;
 }
 
-.card__text {}
+/* .card__text {} */
 
-.card__heading {}
+/* .card__heading {} */
 
 .card__img {
     border: none;
@@ -159,10 +159,9 @@ a {
     padding: .5rem;
 }
 
-.btn:hover,
-.btn--submit:hover {}
-
-
+.btn:hover {
+    opacity: 70%;
+}
 
 .modal__content {
     max-width: 500px;
@@ -252,7 +251,7 @@ a {
     color: white;
 }
 
-.mobile-item {
+.mobile-view-item {
     display: none;
 }
 
@@ -439,12 +438,101 @@ a {
     margin: 1rem 0;
 }
 
+/* Login page */
+.registeration-banner {
+    height: 3vh;
+}
+
+.registeration-form__title {
+    font-size: 1.5rem;
+    color: var(--white);
+}
+
+.registeration-form {
+    height: 500px;
+    max-width: 700px;
+    min-width: 300px;
+    background-color: var(--navy);
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: none;
+    border-radius: 10px;
+
+    /* Center element at the center of the page */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+
+    /* box shadow */
+    box-shadow: 7px 8px 17px -10px rgba(0, 0, 0, 0.67);
+    -webkit-box-shadow: 7px 8px 17px -10px rgba(0, 0, 0, 0.67);
+    -moz-box-shadow: 7px 8px 17px -10px rgba(0, 0, 0, 0.67);
+}
+
+.form-label {
+    font-size: 1.1rem;
+    color: var(--white);
+}
+
+.registeration-form__input-container {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 2rem;
+    justify-content: space-between;
+}
+
+.registeration-form__input-container input[type=text],
+.registeration-form__input-container input[type=email] {
+    display: block;
+}
+
+.registeration-form__input {
+    width: 300px;
+    height: 30px;
+    padding: 0 .5rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.registeration-form__input:focus {
+    outline: none;
+}
+
+.rbtn-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.registeration-form__submit-btn-wrapper {
+    width: 100%;
+}
+
+.registeration-form__submit-btn {
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+}
 
 @media only screen and (max-width:750px) {
+    .nav__heading {
+        padding: 0 1rem;
+    }
+
     .nav__heading-items {
         width: 50%;
         display: flex;
         justify-content: space-between;
+        align-items: center;
+    }
+
+    .icon {
+        margin-bottom: -5px;
     }
 
     .nav__navigation {
@@ -455,7 +543,7 @@ a {
         right: -500px;
         width: 50%;
         z-index: 10;
-        background-color: red;
+        background-color: var(--navy);
     }
 
     .nav__navigation-items {
@@ -467,9 +555,9 @@ a {
         margin: 5px;
     }
 
-    .icon {
-        margin: 0;
-    }
+    /* .nav__navigation-items li a {
+        color: white;
+    } */
 
     .about-us {
         width: 100%;
@@ -486,7 +574,7 @@ a {
     }
 
 
-    .mobile-item {
+    .mobile-view-item {
         display: block;
     }
 
@@ -498,5 +586,46 @@ a {
 
     .footer-menu div {
         margin: 10px;
+    }
+
+    /* Card */
+
+    .card {
+        width: 200px;
+        height: auto;
+    }
+
+    .card__overlay {
+        height: 100%;
+        border-radius: 5px;
+    }
+
+    /* Container */
+    .container__header {
+        font-size: 1.2rem;
+        margin: .5rem;
+    }
+
+    .container__text {
+        margin: .5rem;
+        line-height: 1.5rem;
+    }
+
+    /* Equipment page */
+
+    /* .catalogue__wrapper {} */
+
+    .catalogue__filter {
+        display: none;
+        position: absolute;
+        top: 150px;
+        z-index: 100;
+    }
+
+    .catalogue__filter-fieldset {
+        background-color: var(--navy);
+        border: none;
+        border-radius: 5px;
+        padding: 1rem;
     }
 }

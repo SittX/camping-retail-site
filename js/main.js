@@ -29,3 +29,12 @@ window.onload = function () {
 let closeModal = () => {
     modal.classList.remove("modal--active");
 }
+
+let filter = document.getElementById("catalogue__filter");
+let catalogueFilterToggle = () => {
+    if (filter.style.display == "block") {
+        filter.style.display = "none";
+    } else {
+        filter.style.display = "block";
+    }
+}
