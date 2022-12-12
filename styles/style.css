@@ -23,6 +23,29 @@ a {
     color: var(--black);
 }
 
+/* Topology (font-size) */
+.txt--primary {
+    min-width: 100px;
+    max-width: 50%;
+    line-height: 1.5rem;
+    margin-right: 1rem;
+}
+
+.txt--title {
+    color: white;
+    font-size: 1.4rem;
+    margin: 1rem 0;
+    font-weight: bold;
+}
+
+.txt--black {
+    color: black;
+}
+
+.txt--white {
+    color: white;
+}
+
 /* Card */
 .card__wrapper {
     display: flex;
@@ -141,6 +164,7 @@ a {
     font-size: 1rem;
     border: none;
     border-radius: 5px;
+    background-color: white;
 }
 
 .btn--close {
@@ -199,7 +223,6 @@ a {
 }
 
 /* Navbar */
-
 .nav__logo {
     width: 100px;
     margin: 0;
@@ -230,6 +253,76 @@ a {
     justify-content: space-evenly;
 }
 
+/* Form */
+.form__title {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.form {
+    height: 500px;
+    max-width: 700px;
+    min-width: 300px;
+    background-color: var(--navy);
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: none;
+    border-radius: 10px;
+
+    /* Center element at the center of the page */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+
+    /* box shadow */
+    box-shadow: 7px 8px 17px -10px rgba(0, 0, 0, 0.67);
+    -webkit-box-shadow: 7px 8px 17px -10px rgba(0, 0, 0, 0.67);
+    -moz-box-shadow: 7px 8px 17px -10px rgba(0, 0, 0, 0.67);
+}
+
+.input__label {
+    font-size: 1.1rem;
+    color: white;
+}
+
+.input__container {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 2rem;
+    justify-content: space-between;
+}
+
+.input__container input[type=text],
+.input__container input[type=email] {
+    display: block;
+}
+
+.input {
+    width: 300px;
+    height: 30px;
+    padding: 0 .5rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.input--secondary {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.input__label--secondary {
+    display: block;
+    color: white;
+}
+
+.input:focus {
+    outline: none;
+}
 
 /* Page banner  */
 .banner {
@@ -315,19 +408,34 @@ a {
 
 .container {
     padding: 1rem;
+    position: relative;
 }
 
 .container__header {
     font-size: 1.5rem;
 }
 
-.container__text {
-    min-width: 100px;
-    max-width: 50%;
-}
+
 
 .container__content {
     display: flex;
+}
+
+.container__content--col {
+    justify-content: center;
+    align-items: center;
+}
+
+.container--navy {
+    background-color: var(--navy);
+}
+
+.container--half {
+    height: 50vh;
+}
+
+.container--60vh {
+    height: 60vh;
 }
 
 .map-iframe {
@@ -439,85 +547,42 @@ a {
 }
 
 /* Login page */
-.registeration-banner {
+/* .banner {
     height: 3vh;
-}
+} */
 
-.registeration-form__title {
-    font-size: 1.5rem;
-    color: var(--white);
-}
-
-.registeration-form {
-    height: 500px;
-    max-width: 700px;
-    min-width: 300px;
-    background-color: var(--navy);
-    padding: 0 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    border: none;
-    border-radius: 10px;
-
-    /* Center element at the center of the page */
+.login-form-container {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     margin: auto;
-
-    /* box shadow */
-    box-shadow: 7px 8px 17px -10px rgba(0, 0, 0, 0.67);
-    -webkit-box-shadow: 7px 8px 17px -10px rgba(0, 0, 0, 0.67);
-    -moz-box-shadow: 7px 8px 17px -10px rgba(0, 0, 0, 0.67);
-}
-
-.form-label {
-    font-size: 1.1rem;
-    color: var(--white);
-}
-
-.registeration-form__input-container {
-    display: flex;
-    flex-wrap: wrap;
-    row-gap: 2rem;
-    justify-content: space-between;
-}
-
-.registeration-form__input-container input[type=text],
-.registeration-form__input-container input[type=email] {
-    display: block;
-}
-
-.registeration-form__input {
-    width: 300px;
-    height: 30px;
-    padding: 0 .5rem;
-    border: none;
+    padding: 1rem;
+    min-width: 300px;
+    max-width: 500px;
+    border: 1px solid black;
     border-radius: 5px;
+    height: 300px;
 }
 
-.registeration-form__input:focus {
-    outline: none;
-}
-
-.rbtn-container {
+.login-form {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1rem;
 }
 
-.registeration-form__submit-btn-wrapper {
-    width: 100%;
+.forgot-password {
+    color: white;
+    text-decoration: underline;
 }
 
-.registeration-form__submit-btn {
-    padding: .5rem 1rem;
-    font-size: 1rem;
-    border: none;
-    border-radius: 5px;
+.forgot-password:hover {
+    color: var(--black);
 }
+
 
 @media only screen and (max-width:750px) {
     .nav__heading {
@@ -559,14 +624,15 @@ a {
         color: white;
     } */
 
-    .about-us {
+    .container__content--col {
         width: 100%;
         flex-direction: column;
     }
 
-    .container__text {
+    .txt--primary {
         max-width: 100%;
         margin-bottom: 1rem;
+        line-height: 1rem;
     }
 
     .map-iframe {
@@ -604,11 +670,6 @@ a {
     .container__header {
         font-size: 1.2rem;
         margin: .5rem;
-    }
-
-    .container__text {
-        margin: .5rem;
-        line-height: 1.5rem;
     }
 
     /* Equipment page */

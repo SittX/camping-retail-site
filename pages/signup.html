@@ -6,9 +6,149 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign up</title>
+    <link rel="stylesheet" href="/styles/style.css">
 </head>
 
 <body>
+    <nav>
+        <div class="nav__heading">
+            <a href="../home.html" class="nav__heading-brand"><img src="/assets/icons/camping_logo.webp"
+                    alt="camping company logo" class="nav__logo"></a>
+            <ul class="nav__heading-items">
+                <li><a href="/pages/login.html">Login</a></li>
+                <li><a href="#">Sign up</a></li>
+                <li><a href="basket.html">
+                        <img src="/assets/icons/shopping_cart.svg" alt="shopping cart icon" class="icon">
+                        Basket</a></li>
+                <div class="menu__open-btn mobile-view-item" onclick="openMenu()"><img
+                        src="/assets/icons/hamburger_menu.svg" class="icon" alt="menu open button"></div>
+            </ul>
+        </div>
+        <div class="nav__navigation" id="mobile-menu">
+            <div class="menu__close-btn mobile-view-item" onclick="closeMenu()"><img src="/assets/icons/menu_close.svg"
+                    alt="menu close button" class="icon"></div>
+            <ul class="nav__navigation-items">
+                <li><a href="equipment.html">
+                        <img src="/assets/icons/camping.svg" alt="camping icon" class="icon">
+                        Camping Equipments</a></li>
+                <li><a href="furniture.html">
+                        <img src="/assets/icons/furniture.svg" alt="furniture icon" class="icon">
+                        Furnitures</a></li>
+                <li><a href="offersAndPackages.html">
+                        <img src="/assets/icons/sell.svg" alt="sell icon" class="icon">
+                        Offers and packages</a></li>
+                <li><a href="reviews.html">
+                        <img src="/assets/icons/review.svg" alt="reviews icon" class="icon">
+                        Reviews</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main class="container container--60vh">
+        <form action="#" class="form">
+            <p class="form__title">Sign Up</p>
+            <div class="input__container">
+                <div>
+                    <label for="firstname" class="input__label">First Name</label>
+                    <input type="text" class="input" name="firstname" id="firstname">
+                </div>
+                <div>
+                    <label for="lastname" class="input__label">Last Name</label>
+                    <input type="text" class="input" name="lastname" id="lastname">
+                </div>
+                <div>
+                    <label for="email" class="input__label">Email</label>
+                    <input type="email" class="input" name="email" id="email">
+                </div>
+                <div>
+                    <label for="phoneNumber" class="input__label">Phone number</label>
+                    <input type="text" class="input" name="phoneNumber" id="phoneNumber">
+                </div>
+            </div>
+
+            <p class="input__label">Gender</p>
+            <div class="input__container">
+                <div>
+                    <input type="radio" name="gender" id="male">
+                    <label for="male" class="input__label">Male</label>
+                </div>
+                <div>
+                    <input type="radio" name="gender" id="female">
+                    <label for="female" class="input__label">Female</label>
+                </div>
+                <div>
+                    <input type="radio" name="gender" id="preferNotToSay">
+                    <label for="preferNotToSay" class="input__label">Prefer not to say</label>
+                </div>
+            </div>
+
+            <div class="container">
+                <input type="submit" value="Sign up" class="btn btn--submit">
+            </div>
+        </form>
+    </main>
+    <footer>
+        <footer>
+            <section class="social-media__links">
+                <div class="social-media__facebook">
+                    <img src="/assets/icons/facebook.png" class="social-media__icon" alt="facebook icon">
+                </div>
+                <div class="social-media__twitter">
+                    <img src="/assets/icons/twitter.png" class="social-media__icon" alt="twitter icon">
+                </div>
+                <div class="social-media__instagram">
+                    <img src="/assets/icons/instagram.png" class="social-media__icon" alt="instagram icon">
+                </div>
+            </section>
+
+            <section class="footer-menu">
+                <div class="footer-menu__information">
+                    <h3>Information</h3>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Offers and packages</a></li>
+                        <li><a href="#">Best sellers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-menu__account">
+                    <h3>Account</h3>
+                    <ul>
+                        <li><a href="#">Sign up</a></li>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Basket</a></li>
+                    </ul>
+                </div>
+                <div class="footer-menu__store-details">
+                    <h3>About the store</h3>
+                    <ul>
+                        <li>
+                            <p>Campmor is a recreational equipment retailer that was established in Bogota, New Jersey
+                                in
+                                1978. The retail store is in Paramus, New Jersey, and offers much of what is offered
+                                online
+                                and more.</p>
+                        </li>
+                        <li>
+                            <img src="/assets/icons/home_pin.svg" class="icon" alt="home pin icon">
+                            <strong>810 Route 17 North Paramus, New Jersey 07652</strong>
+                        </li>
+                        <li>
+                            <img src="/assets/icons/phone.svg" class="icon" alt="phone icon">
+                            <strong>Phone: 1-201-445-5000</strong>
+                        </li>
+                        <li>
+                            Monday, Tuesday, Wednesday, Friday 10:00am - 5:00pm
+                        </li>
+                        <li>
+                            Thursday 10:00am-7:00pm
+                        </li>
+                        <li>
+                            Saturday 10:00am-5:00pm
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </footer>
+        <script src="../js/main.js"></script>
 
 </body>
 
