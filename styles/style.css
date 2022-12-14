@@ -46,6 +46,15 @@ a {
     color: white;
 }
 
+.txt--important {
+    font-size: 1.4rem;
+    margin: 1rem 0;
+}
+
+.txt--red {
+    color: red;
+}
+
 /* Card */
 .card__wrapper {
     display: flex;
@@ -547,10 +556,7 @@ a {
     outline: none;
 }
 
-.txt--important {
-    font-size: 1.4rem;
-    margin: 1rem 0;
-}
+
 
 /* Login page */
 /* .banner {
@@ -589,6 +595,116 @@ a {
     color: var(--black);
 }
 
+
+/* Offers and Packages page */
+.slider__container {
+    width: 600px;
+    height: 400px;
+    position: relative;
+}
+
+.slider__img-container {
+    position: absoulte;
+    top: 0;
+    left: 0;
+    transform: translateX(100%);
+}
+
+.slider__img-container img {
+    width: 100px;
+    display: inline-block;
+}
+
+.promotion {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+
+/* Product slider */
+.slider {
+    width: 100%;
+    min-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.arrow {
+    width: 2rem;
+    margin: 0 1rem;
+}
+
+.slide__container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.slide__container::-webkit-scrollbar {
+    height: 5px;
+    width: 2px;
+    border: 1px solid #d5d5d5;
+    background: #d5d5d5;
+}
+
+.slide__container::-webkit-scrollbar-track {
+    --webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.slide__container::-webkit-scrollbar-thumb {
+    background-color: var(--color-primary);
+    outline: 1px solid #eee;
+}
+
+.slide {
+    flex: 0 0 auto;
+    object-fit: cover;
+    cursor: pointer;
+    margin: 5px;
+    overflow: hidden;
+    transform: scale(.95);
+    transition: all .3s;
+}
+
+.slide:hover {
+    transform: scale(1);
+}
+
+.slide__details {
+    text-align: center;
+    padding-bottom: 1rem;
+    background-color: #fff;
+}
+
+.product__name {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.slide__details a {
+    font-size: 1rem;
+    text-decoration: none;
+    background-color: var(--navy);
+    color: white;
+    padding: .5rem 1rem;
+    border-radius: 3px;
+}
+
+/* .slide__details a:hover {} */
+
+.slider__img {
+    width: 200px;
+    height: 200px;
+}
 
 @media only screen and (max-width:750px) {
 

@@ -38,3 +38,58 @@ let catalogueFilterToggle = () => {
         filter.style.display = "block";
     }
 }
+
+const imgWrapper = document.getElementById("img-wrapper")
+let currentPosition = 0;
+
+let leftSide = () => {
+    console.log("left");
+    let translateX = currentPosition += 50;
+    imgWrapper.style.transform = "translateX(" + translateX + "px )";
+}
+
+let scrollRight = () => {
+    console.log("right")
+    let translateX = currentPosition -= 50;
+    imgWrapper.style.transform = "translateX(" + translateX + "px )";
+    console.log(currentPosition);
+}
+
+
+let slides = document.getElementsByClassName('slide');
+let slider = document.getElementById('slide__container');
+
+let buttonRight = document.getElementById('slider__right-arrow');
+let buttonLeft = document.getElementById('slider__left-arrow');
+
+buttonLeft.addEventListener('click', function () {
+    slider.scrollLeft -= 125;
+})
+
+buttonRight.addEventListener('click', function () {
+    slider.scrollLeft += 125;
+})
+
+const maxScrollLeft = slider.scrollWidth - slider.clientWidth;
+
+//AUTO PLAY THE SLIDER 
+// function autoPlay() {
+//     if (slider.scrollLeft > (maxScrollLeft - 1)) {
+//         slider.scrollLeft -= maxScrollLeft;
+//     } else {
+//         slider.scrollLeft += 1;
+//     }
+// }
+// let play = setInterval(autoPlay, 50);
+
+// PAUSE THE SLIDE ON HOVER
+for (var i = 0; i < slides.length; i++) {
+
+    slides[i].addEventListener('mouseover', function () {
+        clearInterval(play);
+    });
+
+    slides[i].addEventListener('mouseout', function () {
+        return play = setInterval(autoPlay, 50);
+    });
+}

@@ -18,7 +18,7 @@ https://www.stratatomic.com/news/news2021/press-What-is-W3C-Validation.php
 
 
 ## Furniture brands and their prices
-**Eureka camp table**
+**Eureka camp table** Done
 Price - 124.95
 Discount price - 93.71
 Vendor - Eureka
@@ -33,7 +33,7 @@ Vendor - Helinox
 
 ## Camping kitchenwares
 
-**Eureka SPRK Camp Grill**
+**Eureka SPRK Camp Grill** Done
 Price - 129.95
 Discount price - 97.46
 Vendor - Eureka
@@ -68,12 +68,12 @@ Vendor - BioLite
 Price - 99.95
 Vendor - Goal Zero
 
-**Goal Zero Lighthouse latern and USB Power Hub**
+**Goal Zero Lighthouse latern and USB Power Hub** Done
 Price - 69.95 
 Discount price - 62.96
 Vendor - Goal Zero
 
-**Suunto M-3 G Compass**
+**Suunto M-3 G Compass** Done
 Price - 79.00
 Discount price - 75.00
 Vendor - Suunto
@@ -86,7 +86,7 @@ Vendor - Suunto
 Price - 5.50
 Vendor - Coghlan's
 
-**UCO Match Container w/25 Matches**
+**UCO Match Container w/25 Matches** Done
 Price - 8.99
 Discount price - 3.99
 Vendor - UCO
@@ -94,13 +94,13 @@ Vendor - UCO
 
 ## Tents
 
-**Crua Cottage By Cura Outdoors**
+**Crua Cottage By Cura Outdoors** Done
 Price - 1,799.99
 Discount price - 1,299.99
 Vendor - Cura Outdoors
 
 
-**MSR Hubba Hubba 2 Tent V9**
+**MSR Hubba Hubba 2 Tent V9** Done
 Price - 479.95
 Discount price - 349.99
 Vendor - MSR
@@ -108,18 +108,21 @@ Vendor - MSR
 
 ## Sleeping bags
 
-**Coleman Blue Bandit 30 Sleeping bag**
+**Coleman Blue Bandit 30 Sleeping bag** Done
 Price - 54.99
 Discount price - 34.99
 Vendor - Coleman
 
-**Big Agnes Dream Island 35 50" Double Wide**
+**Big Agnes Dream Island 35 50" Double Wide** Done
 Price - 329.99
 Discount price - 229.95
 Vendor -  Big Agnes
 
-**Eagles Nest Outfitters SingleNet Hammock**
+**Eagles Nest Outfitters SingleNet Hammock** Done
 Price - 54.95
 Discount price - 41.21
 Vendor - Eagles Nest Outfitters
 
+
+***Product slider referenced site***
+https://github.com/zinotrust/10JavaScriptProjects

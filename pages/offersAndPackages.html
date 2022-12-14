@@ -47,25 +47,125 @@
         </div>
     </nav>
 
-    <!-- Maybe we can use translate-x to move the inner div on the horizontal axis. -->
-    <main style="width: 500px; height:300px; position: relative; overflow:hidden; border: 1px solid black;">
-        <section style="display: flex; position: absolute; top: 0;">
-            <div><img src="/assets/images/equipments/big_agnes_sleeping_bag.jpg" style="width: 200px;" alt=""></div>
-            <div><img src="/assets/images/equipments/BioLite_powerstation.jpg" style="width: 200px;" alt=""></div>
-            <div><img src="/assets/images/equipments/Coleman_sleeping_bag.jpg" style="width: 200px;" alt=""></div>
-            <div><img src="/assets/images/equipments/coura_tents.jpg" style="width: 200px;" alt=""></div>
-            <div><img src="/assets/images/equipments/coura_tents.jpg" style="width: 200px;" alt=""></div>
-            <div><img src="/assets/images/equipments/coura_tents.jpg" style="width: 200px;" alt=""></div>
-            <div><img src="/assets/images/equipments/coura_tents.jpg" style="width: 200px;" alt=""></div>
-            <div><img src="/assets/images/equipments/coura_tents.jpg" style="width: 200px;" alt=""></div>
-            <div><img src="/assets/images/equipments/coura_tents.jpg" style="width: 200px;" alt=""></div>
-            <div><img src="/assets/images/equipments/coura_tents.jpg" style="width: 200px;" alt=""></div>
-            <div><img src="/assets/images/equipments/eagles_nest_hammock.jpg" style="width: 200px;" alt=""></div>
-            <div><img src="/assets/images/equipments/goal_zero_light_latern.jpg" style="width: 200px;" alt=""></div>
-        </section>
-    </main>
+    <section class="container">
+        <p class="txt--title txt--black">Best Sellers</p>
+        <div class="slider">
+            <img id="slider__left-arrow" class="arrow" src="/assets/icons/left_arrow.svg"
+                alt="left arrow of product slider">
+            <section class="slide__container" id="slide__container">
+                <div class="slide">
+                    <img src="/assets/images/equipments/big_agnes_sleeping_bag.jpg" alt="product image"
+                        class="slider__img">
+                    <div class="slide__details">
+                        <p class="product__name">Big Agnes sleeping bag</p>
+                        <a href="#">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="/assets/images/equipments/BioLite_powerstation.jpg" alt="product image"
+                        class="slider__img">
+                    <div class="slide__details">
+                        <p class="product__name">BioLite powerstation</p>
+                        <a href="#">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="/assets/images/furnitures/Eureka_camp_table.jpg" alt="product image" class="slider__img">
+                    <div class="slide__details">
+                        <p class="product__name">Eureka camp table</p>
+                        <a href="#">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="/assets/images/survival_kits/Coghlan's_flint_striker.jpg" alt="product image"
+                        class="slider__img">
+                    <div class="slide__details">
+                        <p class="product__name">Coghlan's flint striker</p>
+                        <a href="#">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="/assets/images/kichenwares/eureka_camp_grill.jpg" alt="product image" class="slider__img">
+                    <div class="slide__details">
+                        <p class="product__name">Eureka camp grill</p>
+                        <a href="#">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="/assets/images/equipments/Sunnto_compass.jpg" alt="product image" class="slider__img">
+                    <div class="slide__details">
+                        <p class="product__name">Sunnto compass</p>
+                        <a href="#">Add to Cart</a>
+                    </div>
+                </div>
+            </section>
+            <img id="slider__right-arrow" class="arrow" src="/assets/icons/right_arrow.svg"
+                alt="right arrow of product slider">
+        </div>
+    </section>
 
+    <div class="container promotion">
+        <p class="txt--title txt--black"><span class="txt--red"> 20% off </span>sales are happening right now.</p>
+        <p>This offer is valid in-store and online. Prices displayed reflect this additional
+            discount.</p>
+    </div>
 
+    <section class="card__wrapper">
+        <div class="card card--secondary">
+            <img src="/assets/images/equipments/Coleman_sleeping_bag.jpg" alt="Coleman Blue bandit sleeping bag"
+                class="card__img card__img--secondary">
+            <p class="card__text">Coleman Blue Bandit sleeping bag</p>
+            <p class="card__text price-tag"><del>54.99$</del> 34.99$ </p>
+        </div>
+        <div class="card card--secondary">
+            <img src="/assets/images/equipments/big_agnes_sleeping_bag.jpg" alt="big agnes sleeping bag"
+                class="card__img card__img--secondary">
+            <p class="card__text">Big Agnes sleeping bag</p>
+            <p class="card__text price-tag"><del>329.99$</del> 229.99$ </p>
+        </div>
+        <div class="card card--secondary">
+            <img src="/assets/images/furnitures/Eureka_camp_table.jpg" alt="Goal zero light latern"
+                class="card__img card__img--secondary">
+            <p class="card__text">Eureka camp table</p>
+            <p class="card__text price-tag"><del>124.95$</del> 93.71$ </p>
+        </div>
+        <div class="card card--secondary">
+            <img src="/assets/images/equipments/goal_zero_light_latern.jpg" alt="Sunnto compass"
+                class="card__img card__img--secondary">
+            <p class="card__text">Goal Zero light latern</p>
+            <p class="card__text price-tag"><del>69.95$</del> 62.95$ </p>
+        </div>
+        <div class="card card--secondary">
+            <img src="/assets/images/equipments/Sunnto_compass.jpg" alt="Eureka camp grill"
+                class="card__img card__img--secondary">
+            <p class="card__text">Suunto M-3 G compass</p>
+            <p class="card__text price-tag"><del>79.00$</del> 75.00$ </p>
+        </div>
+        <div class="card card--secondary">
+            <img src="/assets/images/survival_kits/UCO_match.jpg" alt="Eureka camp grill"
+                class="card__img card__img--secondary">
+            <p class="card__text">UCO match Containers w/25 matches</p>
+            <p class="card__text price-tag"><del>8.99$</del> 3.99$ </p>
+        </div>
+        <div class="card card--secondary">
+            <img src="/assets/images/equipments/coura_tents.jpg" alt="Eureka camp grill"
+                class="card__img card__img--secondary">
+            <p class="card__text">Cura Cottage by Cura outdoors</p>
+            <p class="card__text price-tag"><del>1,799.99$</del> 1,299.99$ </p>
+        </div>
+        <div class="card card--secondary">
+            <img src="/assets/images/equipments/MSR_tent.jpg" alt="Eureka camp grill"
+                class="card__img card__img--secondary">
+            <p class="card__text">MSR Hubba Hubba 2 Tent V9</p>
+            <p class="card__text price-tag"><del>479.95$</del> 349.99$ </p>
+        </div>
+        <div class="card card--secondary">
+            <img src="/assets/images/equipments/eagles_nest_hammock.jpg" alt="Eureka camp grill"
+                class="card__img card__img--secondary">
+            <p class="card__text">Eagles Nest outfitters SingleNet Hammock</p>
+            <p class="card__text price-tag"><del>54.95$</del> 41.21$ </p>
+        </div>
+    </section>
     <footer>
         <section class="social-media__links">
             <div class="social-media__facebook">
@@ -100,8 +200,10 @@
                 <h3>About the store</h3>
                 <ul>
                     <li>
-                        <p>Campmor is a recreational equipment retailer that was established in Bogota, New Jersey in
-                            1978. The retail store is in Paramus, New Jersey, and offers much of what is offered online
+                        <p>Campmor is a recreational equipment retailer that was established in Bogota, New Jersey
+                            in
+                            1978. The retail store is in Paramus, New Jersey, and offers much of what is offered
+                            online
                             and more.</p>
                     </li>
                     <li>
