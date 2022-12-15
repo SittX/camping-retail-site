@@ -706,6 +706,46 @@ a {
     height: 200px;
 }
 
+
+/* Reviews page */
+.rating-product-img {
+    width: 300px;
+}
+
+.review__wrapper {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    height: 300px;
+    margin: 2rem 0;
+}
+
+.review__comments-container {
+    width: 80%;
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    /* This enables the vertical scrolling for the review__comments element */
+    overflow-y: scroll;
+    background-color: gray;
+    padding: 1rem;
+    padding-bottom: 2rem;
+    border-radius: 5px;
+}
+
+.review__comments {
+    position: absolute;
+}
+
+
+/* Reply and comments section */
+.reply {
+    border-left: 3px solid black;
+    margin: 1rem 0;
+    padding: 0 1rem;
+}
+
+
 @media only screen and (max-width:750px) {
 
     /* Topology */
