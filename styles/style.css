@@ -168,8 +168,7 @@ a {
 }
 
 .btn--submit {
-    padding: 5px 10px;
-    margin: 8px 0;
+    margin: 1rem 0;
     font-size: 1rem;
     border: none;
     border-radius: 5px;
@@ -331,6 +330,20 @@ a {
 
 .input:focus {
     outline: none;
+}
+
+/* Contact form */
+.contact-form {
+    display: block;
+    position: relative;
+    height: auto;
+    width: auto;
+    padding: 1rem;
+}
+
+.form__title--contact {
+    margin: 1rem 0;
+    font-size: 1.4rem;
 }
 
 /* Page banner  */
@@ -733,21 +746,40 @@ a {
     border-radius: 5px;
 }
 
-.review__comments {
-    position: absolute;
-}
-
+/* Product rating */
 .rating {
     text-align: center;
     font-weight: bold;
 }
 
+.product-rating p {
+    text-align: center;
+}
+
+/* Review section */
+.review__comments {
+    position: absolute;
+}
+
+.review__title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+
 /* Reply and comments section */
 .reply {
-    border-left: 3px solid black;
+    border-left: 3px solid var(--navy);
     margin: 1rem 0;
     padding: 0 1rem;
 }
+
+.reply-username,
+.reply-time {
+    font-weight: bold;
+}
+
+
 
 
 
@@ -903,5 +935,18 @@ a {
     .reply-text,
     .reply-time {
         font-size: 0.9rem;
+    }
+
+    .form,
+    .login-form-container {
+        width: 80%;
+    }
+
+    .input {
+        width: 100%;
+    }
+
+    .contact-form {
+        width: 80%;
     }
 }
