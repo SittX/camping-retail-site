@@ -42,20 +42,34 @@
                         src="/assets/icons/hamburger_menu.svg" class="icon" alt="menu open button"></div>
             </ul>
         </div>
-        <div class="nav__navigation" id="mobile-menu">
+        <div class="nav__menu" id="mobile-menu">
             <div class="menu__close-btn mobile-view-item" onclick="closeMenu()"><img src="/assets/icons/menu_close.svg"
                     alt="menu close button" class="icon"></div>
-            <ul class="nav__navigation-items">
-                <li><a href="/pages/equipment.html">
+            <ul class="nav__menu-items">
+                <li class="nav__menu-item"><a href="/pages/equipment.html">
                         <img src="/assets/icons/camping.svg" alt="camping icon" class="icon">
-                        Camping Equipments</a></li>
-                <li><a href="/pages/furniture.html">
+                        Camping Equipments</a>
+                    <ul class="nav__menu-dropdown">
+                        <li class="nav__menu-dropdown-item"><a href="/pages/equipment.html#sleeping-bag">Sleeping
+                                bag</a></li>
+                        <li class="nav__menu-dropdown-item"><a href="pages/equipment.html#electronics">Electronics
+                            </a></li>
+                        <li class="nav__menu-dropdown-item"><a href="pages/equipment.html#kitchenwares">Kitchenwares</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav__menu-item">
+                    <a href="/pages/furniture.html">
                         <img src="/assets/icons/furniture.svg" alt="furniture icon" class="icon">
-                        Furnitures</a></li>
-                <li><a href="/pages/offersAndPackages.html">
+                        Furnitures</a>
+                </li>
+
+                <li class="nav__menu-item"><a href="/pages/offersAndPackages.html">
                         <img src="/assets/icons/sell.svg" alt="sell icon" class="icon">
                         Offers and packages</a></li>
-                <li><a href="/pages/reviews.html">
+
+                <li class="nav__menu-item"><a href="/pages/reviews.html">
                         <img src="/assets/icons/review.svg" alt="reviews icon" class="icon">
                         Reviews</a></li>
             </ul>
@@ -117,7 +131,7 @@
         <img id="slider__right-arrow" class="arrow" src="/assets/icons/right_arrow.svg"
             alt="right arrow of product slider">
     </div>
-    <section class="carousel">
+    <!-- <section class="carousel">
         <ul class="carousel__viewport">
             <li id="carousel__slide1" class="carousel__slide">
                 <div class="carousel__slider-btn">
@@ -152,6 +166,11 @@
                 </div>
             </li>
         </ul>
+    </section> -->
+    <section class="iframe-video-container">
+        <iframe src="https://www.youtube.com/embed/Lpl_IewTTKI?autoplay=1" title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen class="iframe-video"></iframe>
     </section>
 
     <section class="container">
@@ -189,10 +208,17 @@
     <section class="container">
         <div class="container__header">About us</div>
         <div class="container__content ">
-            <p class="txt--primary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates obcaecati
-                tempora voluptatibus veniam quae assumenda minima voluptas soluta cumque quidem. Iusto sint ab optio,
-                deleniti exercitationem odit quo et quibusdam consequuntur soluta eligendi, dolorum eum eveniet culpa ea
-                repellendus doloremque qui rem eos at ipsum explicabo. Iure dolore ipsam hic?</p>
+            <p class="txt--primary">
+                Campmor is a recreational equipment retailer that was established in Bogota, New Jersey in
+                1978. The retail store is in Paramus, New Jersey, and offers much of what is offered online
+                and more.
+                <br>
+                <img src="/assets/icons/home_pin.svg" class="icon" alt="home pin icon">
+                <strong>810 Route 17 North Paramus, New Jersey 07652</strong>
+                <br>
+                <img src="/assets/icons/phone.svg" class="icon" alt="phone icon">
+                <strong>Phone: 1-201-445-5000</strong>
+            </p>
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50466.408932719336!2d-122.28644551501749!3d37.76306779457855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f80d8f2cf1595%3A0x66ff99cf60016f14!2sAlameda%2C%20CA%2C%20USA!5e0!3m2!1sen!2smm!4v1670073725558!5m2!1sen!2smm"
                 allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
@@ -230,21 +256,9 @@
                 </ul>
             </div>
             <div class="footer-menu__store-details">
-                <h3>About the store</h3>
+                <h3>Opening hours</h3>
                 <ul>
-                    <li>
-                        <p>Campmor is a recreational equipment retailer that was established in Bogota, New Jersey in
-                            1978. The retail store is in Paramus, New Jersey, and offers much of what is offered online
-                            and more.</p>
-                    </li>
-                    <li>
-                        <img src="/assets/icons/home_pin.svg" class="icon" alt="home pin icon">
-                        <strong>810 Route 17 North Paramus, New Jersey 07652</strong>
-                    </li>
-                    <li>
-                        <img src="/assets/icons/phone.svg" class="icon" alt="phone icon">
-                        <strong>Phone: 1-201-445-5000</strong>
-                    </li>
+
                     <li>
                         Monday, Tuesday, Wednesday, Friday 10:00am - 5:00pm
                     </li>
