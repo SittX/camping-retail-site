@@ -486,7 +486,6 @@ a {
 }
 
 /* Iframe */
-
 .iframe-video-container {
     display: flex;
     justify-content: center;
@@ -505,6 +504,38 @@ a {
     height: 350px;
     border: 0;
 }
+
+/* Searchbar */
+.searchbox {
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    background-color: var(--navy);
+    color: white;
+    margin: 1.5rem;
+}
+
+.searchButton {
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    transition: 0.4s;
+    border: solid 1px black;
+}
+
+.searchbox__input {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0;
+}
+
 
 
 /* Footer */
