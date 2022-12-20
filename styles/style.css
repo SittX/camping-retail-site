@@ -110,14 +110,15 @@ a {
 
 .card__img--secondary {
     height: 60%;
+    transition: 250ms ease-in;
 }
 
 .card--secondary:hover .card__img--secondary {
-    opacity: 30%;
+    transform: scale(1.08);
 }
 
 .card--secondary:hover .card__text {
-    color: blue;
+    color: var(--navy);
 }
 
 .card--secondary:hover .price-tag {
@@ -811,7 +812,7 @@ a {
     overflow: hidden;
     /* This enables the vertical scrolling for the review__comments element */
     overflow-y: scroll;
-    background-color: gray;
+    background-color: #cccbcb;
     padding: 1rem;
     padding-bottom: 2rem;
     border-radius: 5px;
