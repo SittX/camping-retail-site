@@ -40,15 +40,15 @@ let catalogueFilterToggle = () => {
 }
 
 // Search bar
-let toggleStatus = false;
-let toggleSearchbar = () => {
-    let input = document.getElementById("searchbox__input");
-    let searchbox = document.getElementById("searchbox");
-    searchbox.style.width = "400px";
-    input.style.width = "355px";
-    input.style.padding = "0 20px";
-    toggleStatus = !toggleStatus;
-}
+// let toggleStatus = false;
+// let toggleSearchbar = () => {
+//     let input = document.getElementById("searchbox__input");
+//     let searchbox = document.getElementById("searchbox");
+//     searchbox.style.width = "400px";
+//     input.style.width = "355px";
+//     input.style.padding = "0 20px";
+//     toggleStatus = !toggleStatus;
+// }
 
 // Image slider
 let slides = document.getElementsByClassName('slide');
@@ -68,7 +68,7 @@ buttonRight.addEventListener('click', function () {
 
 // const maxScrollLeft = slider.scrollWidth - slider.clientWidth;
 
-//AUTO PLAY THE SLIDER 
+//AUTO PLAY THE SLIDER
 // function autoPlay() {
 //     if (slider.scrollLeft > (maxScrollLeft - 1)) {
 //         slider.scrollLeft -= maxScrollLeft;
