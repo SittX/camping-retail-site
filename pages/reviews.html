@@ -14,10 +14,10 @@
 
 <body>
     <nav>
-        <div class="nav__heading">
-            <a href="../home.html" class="nav__heading-brand"><img src="/assets/icons/camping_logo.webp"
+        <div class="nav__top-menu">
+            <a href="../home.html" class="nav__top-menu-brand"><img src="/assets/icons/camping_logo.webp"
                     alt="camping company logo" class="nav__logo"></a>
-            <ul class="nav__heading-items">
+            <ul class="nav__top-menu-items">
                 <li><a href="/pages/login.html">Login</a></li>
                 <li><a href="/pages/signup.html">Sign up</a></li>
                 <li><a href="basket.html">
@@ -27,10 +27,10 @@
                         src="/assets/icons/hamburger_menu.svg" class="icon" alt="menu open button"></div>
             </ul>
         </div>
-        <div class="nav__menu" id="mobile-menu">
+        <div class="nav__bottom-menu" id="mobile-menu">
             <div class="menu__close-btn mobile-view-item" onclick="closeMenu()"><img src="/assets/icons/menu_close.svg"
                     alt="menu close button" class="icon"></div>
-            <ul class="nav__menu-items">
+            <ul class="nav__bottom-menu-items">
                 <li><a href="equipment.html">
                         <img src="/assets/icons/camping.svg" alt="camping icon" class="icon">
                         Camping Equipments</a></li>
@@ -47,151 +47,236 @@
         </div>
     </nav>
 
-    <main class="container">
-        <section class="reviews__container">
-            <!-- This is where each review item goes here -->
-            <div class="review__item">
-                <!-- Rating section -->
-                <div class="product-rating">
-                    <img src="/assets/images/equipments/BioLite_powerstation.jpg" alt="rating product image"
-                        class="rating-product-img">
-                    <p class="review__product-name">Chair</p>
-                    <p class="rating">5 out of 10</p>
-                </div>
-
-                <div class="review__comments-container">
-                    <div class="review__comments">
-                        <!-- Reviewer review -->
-                        <div class="review">
-                            <p class="review__title">Why is this chair build quality so bad ?</p>
-                            <p class="review__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium
-                                eaque nobis facilis magnam adipisci? Consequuntur, iusto. Aperiam doloremque consectetur
-                                repellat deleniti, officiis saepe ipsa iusto aliquid distinctio dolorem quaerat alias
-                                inventore ab harum, minima minus?</p>
-                        </div>
-                        <!-- Replies section -->
-                        <div class="reply">
-                            <p class="reply__username">James</p>
-                            <p class="reply__time">About an hour ago</p>
-                            <p class="reply__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum non
-                                libero
-                                laudantium nisi eius, fugiat deserunt velit cupiditate, corporis repellat animi iste
-                                molestiae explicabo modi, placeat nesciunt esse labore sapiente?</p>
-                        </div>
-
-                        <div class="reply">
-                            <p class="reply__username">James</p>
-                            <p class="reply__time">About an hour ago</p>
-                            <p class="reply__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum non
-                                libero
-                                laudantium nisi eius, fugiat deserunt velit cupiditate, corporis repellat animi iste
-                                molestiae explicabo modi, placeat nesciunt esse labore sapiente?</p>
-                        </div>
-                        <div class="reply">
-                            <p class="reply__username">James</p>
-                            <p class="reply__time">About an hour ago</p>
-                            <p class="reply__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum non
-                                libero
-                                laudantium nisi eius, fugiat deserunt velit cupiditate, corporis repellat animi iste
-                                molestiae explicabo modi, placeat nesciunt esse labore sapiente?</p>
-                        </div>
-                    </div>
-                </div>
-
+    <section class="reviews__container">
+        <!-- This is where each review item goes here -->
+        <div class="review__item">
+            <!-- Rating section -->
+            <div class="product-rating">
+                <img src="/assets/images/equipments/Coleman_sleeping_bag.jpg" alt="rating product image"
+                    class="rating-product-img">
+                <p class="review__product-name">Coleman sleeping bag</p>
+                <p class="rating">8 out of 10</p>
             </div>
 
-            <div class="review__item">
-                <!-- Rating section -->
-                <div class="product-rating">
-                    <img src="/assets/images/equipments/BioLite_powerstation.jpg" alt="rating product image"
-                        class="rating-product-img">
-                    <p class="review__product-name">Chair</p>
-                    <p class="rating">5 out of 10</p>
-                </div>
+            <div class="review__comments-container">
+                <div class="review__comments">
+                    <!-- Reviewer review -->
+                    <div class="review">
+                        <p class="review__title">Warm and Comfortable Sleeping Bag</p>
+                        <p class="review__username">Tom</p>
+                        <p class="review__time">About a day ago</p>
+                        <p class="review__text">
+                            I bought a sleeping bag from this camping retail online shop for my first backpacking
+                            trip and it was a great investment. The item arrived within 7 days of order which is a
+                            really fast shipping time compare to other online store.It has the right
+                            temperature
+                            rating for the season and the compact size made it easy to pack. The bag is super
+                            comfortable and kept me warm on my trip, even in subzero temperatures. I also appreciate
+                            that the shop carries a variety of brands, so I had lots of options to choose from. I'm
+                            definitely a satisfied customer and will be ordering for all my future camping needs.
+                        </p>
+                    </div>
+                    <!-- Replies section -->
+                    <div class="reply">
+                        <p class="reply__username">James</p>
+                        <p class="reply__time">About an hour ago</p>
+                        <p class="reply__text">I also bought the same item that you bought and never have to worry
+                            about that my bag is going to make me freezing cold in cold weather. Also very satisfied
+                            with the purchase and the service.</p>
+                    </div>
 
-                <div class="review__comments-container" id="review-comments-container">
-                    <div class="review__comments">
-                        <!-- Reviewer review -->
-                        <div class="review">
-                            <p class="review__title">Why is this chair build quality so bad ?</p>
-                            <p class="review__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium
-                                eaque nobis facilis magnam adipisci? Consequuntur, iusto. Aperiam doloremque consectetur
-                                repellat deleniti, officiis saepe ipsa iusto aliquid distinctio dolorem quaerat alias
-                                inventore ab harum, minima minus?</p>
-                        </div>
-
-                        <!-- Replies section -->
-                        <div class="reply">
-                            <p class="reply__username">James</p>
-                            <p class="reply__time">About an hour ago</p>
-                            <p class="reply__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum non
-                                libero
-                                laudantium nisi eius, fugiat deserunt velit cupiditate, corporis repellat animi iste
-                                molestiae explicabo modi, placeat nesciunt esse labore sapiente?</p>
-                        </div>
-
-                        <div class="reply">
-                            <p class="reply__username">James</p>
-                            <p class="reply__time">About an hour ago</p>
-                            <p class="reply__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum non
-                                libero
-                                laudantium nisi eius, fugiat deserunt velit cupiditate, corporis repellat animi iste
-                                molestiae explicabo modi, placeat nesciunt esse labore sapiente?</p>
-                        </div>
-                        <div class="reply">
-                            <p class="reply__username">James</p>
-                            <p class="reply__time">About an hour ago</p>
-                            <p class="reply__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum non
-                                libero
-                                laudantium nisi eius, fugiat deserunt velit cupiditate, corporis repellat animi iste
-                                molestiae explicabo modi, placeat nesciunt esse labore sapiente?</p>
-                        </div>
+                    <div class="reply">
+                        <p class="reply__username">John</p>
+                        <p class="reply__time">About 30 minutes ago</p>
+                        <p class="reply__text">
+                            I'm planning a backpacking trip soon to a very cold region and looking for a sleep bag
+                            that could keep me warm in that weather. <span class="reply__mentioned">@Tom</span>
+                            Would you recommand this bag ?
+                        </p>
+                    </div>
+                    <div class="reply">
+                        <p class="reply__username">Tom</p>
+                        <p class="reply__time">About a minute ago</p>
+                        <p class="reply__text">
+                            <span class="reply__mentioned">@John</span> Yes, absolutely. I carried this bag to my
+                            camping to subzero region and even there it is still relatively warm compare to other
+                            sleeping bag.
+                        </p>
+                    </div>
+                    <div class="reply">
+                        <p class="reply__username">John</p>
+                        <p class="reply__time">About seconds ago</p>
+                        <p class="reply__text">
+                            <span class="reply__mentioned">@Tom</span> Thanks for your answer. I will definitely try
+                            this bag.
+                        </p>
+                    </div>
+                    <div class="reply__textbox">
+                        <textarea name="reply-text" id="reply-text" class="reply__textbox-input"
+                            placeholder="Enter your reply ..."></textarea>
+                        <button class="btn btn--navy">Send</button>
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+
+        <div class="review__item">
+            <!-- Rating section -->
+            <div class="product-rating">
+                <img src="/assets/images/kichenwares/eureka_camp_grill.jpg" alt="rating product image"
+                    class="rating-product-img">
+                <p class="review__product-name">Eureka camp grill</p>
+                <p class="rating">8 out of 10</p>
+            </div>
+
+            <div class="review__comments-container" id="review-comments-container">
+                <div class="review__comments">
+                    <!-- Reviewer review -->
+                    <div class="review">
+                        <p class="review__title">Compact and Efficient Camping Stove and Cookware Set</p>
+                        <p class="review__username">Christopher</p>
+                        <p class="review__time">About a day ago</p>
+                        <p class="review__text">
+                            I recently purchased a new stove and cookware set from this camping retail shop and I'm
+                            extremely happy with my purchase. The staff were very helpful in explaining the features
+                            and benefits of different models, and I ultimately chose a lightweight and compact set
+                            that's perfect for my needs. The stove is easy to use and has great heat output, and the
+                            cookware is durable and easy to clean. I've used the set on several camping trips
+                            already and it has exceeded my expectations. I highly recommend this shop for anyone in
+                            need of quality camping gear.
+                        </p>
+                    </div>
+
+                    <!-- Replies section -->
+                    <div class="reply">
+                        <p class="reply__username">Jessica</p>
+                        <p class="reply__time">About 12 hours ago</p>
+                        <p class="reply__text">
+                            Hi Tom, thanks for sharing your experience with us! I'm glad to hear that you're happy
+                            with your new stove and cookware set. I've been considering getting a new set for my
+                            upcoming camping trip and your review has definitely helped me make a decision
+                        </p>
+                    </div>
+
+                    <div class="reply">
+                        <p class="reply__username">Mary</p>
+                        <p class="reply__time">About an hour ago</p>
+                        <p class="reply__text">
+                            I also have been using this set for my camping trips for almost a year and it is still
+                            working like a charm. Definitely recommend for people who are looking for a cooking set
+                            for their camping trip. </p>
+                    </div>
+                    <div class="reply__textbox">
+                        <textarea name="reply-text" id="reply-text" class="reply__textbox-input"
+                            placeholder="Enter your reply ..."></textarea>
+                        <button class="btn btn--navy">Reply</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="review__item">
+            <!-- Rating section -->
+            <div class="product-rating">
+                <img src="/assets/images/equipments/coura_tents.jpg" alt="rating product image"
+                    class="rating-product-img">
+                <p class="review__product-name">Coura tent</p>
+                <p class="rating">9 out of 10</p>
+            </div>
+
+            <div class="review__comments-container" id="review-comments-container">
+                <div class="review__comments">
+                    <!-- Reviewer review -->
+                    <div class="review">
+                        <p class="review__title">Great Tent for Family Camping</p>
+                        <p class="review__text">
+                            I recently purchased a new tent from this camping retail shop and I couldn't be happier
+                            with my purchase. There are different sizes available for each Tent which makes it easy
+                            to choose the right size
+                            and style for my needs. The tent is lightweight, easy to set up, and has plenty of room
+                            for my family of four. I've used it on a few camping trips already and it has held up
+                            well in different weather conditions. Overall, I'm extremely satisfied with my purchase
+                            and would highly recommend this Tent to anyone in need of quality camping Tent for
+                            family camping.
+                        </p>
+                    </div>
+
+                    <!-- Replies section -->
+                    <div class="reply">
+                        <p class="reply__username">Amanda</p>
+                        <p class="reply__time">About a minute ago</p>
+                        <p class="reply__text">
+                            I'm planning a camping trip soon and your review has given me some good ideas for gear
+                            to consider.
+                        </p>
+                    </div>
+
+                    <div class="reply">
+                        <p class="reply__username">Sarah</p>
+                        <p class="reply__time">About 10 minutes ago</p>
+                        <p class="reply__text">
+                            I'm glad to hear that you're happy with your new tent and that it served you well on
+                            your camping trip. I've been considering getting a new tent and your review has
+                            definitely helped me make a decision.
+                        </p>
+                    </div>
+
+                    <div class="reply__textbox">
+                        <textarea name="reply-text" id="reply-text" class="reply__textbox-input"
+                            placeholder="Enter your reply ..."></textarea>
+                        <button class="btn btn--navy">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Add sticky btn that will navigate to this form . -->
-    <section class="contact-us">
+    <section class="contact-form-container">
         <form action="#" class="form contact-form">
-            <p class="form__title form__title--contact">Contact Us</p>
-            <div class="input__container input__container--contact">
+            <p class="form__header">Contact Us</p>
+            <div class="input-container">
                 <div>
-                    <label for="firstname" class="input__label">First Name</label>
-                    <input type="text" class="input" name="firstname" id="firstname">
+                    <label for="firstname" class="form__label">First Name</label>
+                    <input type="text" class="form__input" name="firstname" id="firstname">
                 </div>
                 <div>
-                    <label for="lastname" class="input__label">Last Name</label>
-                    <input type="text" class="input" name="lastname" id="lastname">
+                    <label for="lastname" class="form__label">Last Name</label>
+                    <input type="text" class="form__input" name="lastname" id="lastname">
                 </div>
                 <div>
-                    <label for="email" class="input__label">Email</label>
-                    <input type="email" class="input" name="email" id="email">
+                    <label for="email" class="form__label">Email</label>
+                    <input type="email" class="form__input" name="email" id="email">
                 </div>
                 <div>
-                    <label for="phoneNumber" class="input__label">Phone number</label>
-                    <input type="text" class="input" name="phoneNumber" id="phoneNumber">
+                    <label for="phoneNumber" class="form__label">Phone number</label>
+                    <input type="text" class="form__input" name="phoneNumber" id="phoneNumber">
                 </div>
                 <div>
-                    <label for="contact-form__textarea" class="input__label">Message</label>
+                    <label for="contact-form__textarea" class="form__label">Message</label>
                     <textarea name="textarea" id="contact-form__textarea" class="contact-form__textarea"></textarea>
                 </div>
             </div>
 
-            <input type="submit" value="Submit" class="btn btn--submit">
+            <input type="submit" value="Submit" class="btn btn--grey">
         </form>
     </section>
+
     <footer>
         <section class="social-media__links">
             <div class="social-media__facebook">
-                <img src="/assets/icons/facebook.png" class="social-media__icon" alt="facebook icon">
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="/assets/icons/facebook.png" class="social-media__icon" alt="facebook icon">
+                </a>
             </div>
             <div class="social-media__twitter">
-                <img src="/assets/icons/twitter.png" class="social-media__icon" alt="twitter icon">
+                <a href="https://www.twitter.com" target="_blank">
+                    <img src="/assets/icons/twitter.png" class="social-media__icon" alt="twitter icon">
+                </a>
             </div>
             <div class="social-media__instagram">
-                <img src="/assets/icons/instagram.png" class="social-media__icon" alt="instagram icon">
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="/assets/icons/instagram.png" class="social-media__icon" alt="instagram icon">
+                </a>
             </div>
         </section>
 
@@ -199,17 +284,17 @@
             <div class="footer-menu__information">
                 <h3>Information</h3>
                 <ul>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Offers and packages</a></li>
-                    <li><a href="#">Best sellers</a></li>
+                    <li><a href="../home.html#about-us">About us</a></li>
+                    <li><a href="offersAndPackages.html">Offers and packages</a></li>
+                    <li><a href="offersAndPackages.html#best-sellers">Best sellers</a></li>
                 </ul>
             </div>
             <div class="footer-menu__account">
                 <h3>Account</h3>
                 <ul>
-                    <li><a href="#">Sign up</a></li>
-                    <li><a href="#">Login</a></li>
-                    <li><a href="#">Basket</a></li>
+                    <li><a href="signup.html">Sign up</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="basket.html">Basket</a></li>
                 </ul>
             </div>
             <div class="footer-menu__store-details">
@@ -229,7 +314,6 @@
             </div>
         </section>
     </footer>
-
     <script src="../js/main.js"></script>
 </body>
 

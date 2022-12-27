@@ -11,10 +11,10 @@
 
 <body>
     <nav>
-        <div class="nav__heading">
-            <a href="../home.html" class="nav__heading-brand"><img src="/assets/icons/camping_logo.webp"
+        <div class="nav__top-menu">
+            <a href="../home.html" class="nav__top-menu-brand"><img src="/assets/icons/camping_logo.webp"
                     alt="camping company logo" class="nav__logo"></a>
-            <ul class="nav__heading-items">
+            <ul class="nav__top-menu-items">
                 <li><a href="/pages/login.html">Login</a></li>
                 <li><a href="#">Sign up</a></li>
                 <li><a href="basket.html">
@@ -24,10 +24,10 @@
                         src="/assets/icons/hamburger_menu.svg" class="icon" alt="menu open button"></div>
             </ul>
         </div>
-        <div class="nav__menu" id="mobile-menu">
+        <div class="nav__bottom-menu" id="mobile-menu">
             <div class="menu__close-btn mobile-view-item" onclick="closeMenu()"><img src="/assets/icons/menu_close.svg"
                     alt="menu close button" class="icon"></div>
-            <ul class="nav__menu-items">
+            <ul class="nav__bottom-menu-items">
                 <li><a href="equipment.html">
                         <img src="/assets/icons/camping.svg" alt="camping icon" class="icon">
                         Camping Equipments</a></li>
@@ -43,48 +43,50 @@
             </ul>
         </div>
     </nav>
-    <main class="container">
-        <form action="#" class="form form--signup">
-            <p class="form__title">Sign Up</p>
-            <div class="input__container">
+    <main class="signup-form-flexbox">
+        <!-- <div class="signup-form-wrapper"> -->
+        <form action="#" class="form signup-form">
+            <p class="form__header">Sign Up</p>
+            <div class="input-container">
                 <div>
-                    <label for="firstname" class="input__label">First Name</label>
-                    <input type="text" class="input" name="firstname" id="firstname">
+                    <label for="firstname" class="form__label">First Name</label>
+                    <input type="text" class="form__input" name="firstname" id="firstname">
                 </div>
                 <div>
-                    <label for="lastname" class="input__label">Last Name</label>
-                    <input type="text" class="input" name="lastname" id="lastname">
+                    <label for="lastname" class="form__label">Last Name</label>
+                    <input type="text" class="form__input" name="lastname" id="lastname">
                 </div>
                 <div>
-                    <label for="email" class="input__label">Email</label>
-                    <input type="email" class="input" name="email" id="email">
+                    <label for="email" class="form__label">Email</label>
+                    <input type="email" class="form__input" name="email" id="email">
                 </div>
                 <div>
-                    <label for="phoneNumber" class="input__label">Phone number</label>
-                    <input type="text" class="input" name="phoneNumber" id="phoneNumber">
+                    <label for="phoneNumber" class="form__label">Phone number</label>
+                    <input type="text" class="form__input" name="phoneNumber" id="phoneNumber">
                 </div>
             </div>
 
-            <p class="input__label">Gender</p>
-            <div class="input__container">
+            <p class="form__label">Gender</p>
+            <div class="input-container">
                 <div>
                     <input type="radio" name="gender" id="male">
-                    <label for="male" class="input__label">Male</label>
+                    <label for="male" class="form__label">Male</label>
                 </div>
                 <div>
                     <input type="radio" name="gender" id="female">
-                    <label for="female" class="input__label">Female</label>
+                    <label for="female" class="form__label">Female</label>
                 </div>
                 <div>
                     <input type="radio" name="gender" id="preferNotToSay">
-                    <label for="preferNotToSay" class="input__label">Prefer not to say</label>
+                    <label for="preferNotToSay" class="form__label">Prefer not to say</label>
                 </div>
             </div>
 
             <div class="container">
-                <input type="submit" value="Sign up" class="btn btn--submit">
+                <input type="submit" value="Sign up" class="btn btn--grey">
             </div>
         </form>
+        <!-- </div> -->
     </main>
     <footer>
         <section class="social-media__links">

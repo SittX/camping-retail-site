@@ -14,10 +14,10 @@
 
 <body>
     <nav>
-        <div class="nav__heading">
-            <a href="../home.html" class="nav__heading-brand"><img src="/assets/icons/camping_logo.webp"
+        <div class="nav__top-menu">
+            <a href="../home.html" class="nav__top-menu-brand"><img src="/assets/icons/camping_logo.webp"
                     alt="camping company logo" class="nav__logo"></a>
-            <ul class="nav__heading-items">
+            <ul class="nav__top-menu-items">
                 <li><a href="/pages/login.html">Login</a></li>
                 <li><a href="/pages/signup.html">Sign up</a></li>
                 <li><a href="basket.html">
@@ -27,10 +27,10 @@
                         src="/assets/icons/hamburger_menu.svg" class="icon" alt="menu open button"></div>
             </ul>
         </div>
-        <div class="nav__menu" id="mobile-menu">
+        <div class="nav__bottom-menu" id="mobile-menu">
             <div class="menu__close-btn mobile-view-item" onclick="closeMenu()"><img src="/assets/icons/menu_close.svg"
                     alt="menu close button" class="icon"></div>
-            <ul class="nav__menu-items">
+            <ul class="nav__bottom-menu-items">
                 <li><a href="equipment.html">
                         <img src="/assets/icons/camping.svg" alt="camping icon" class="icon">
                         Camping Equipments</a></li>
@@ -57,8 +57,8 @@
         </div>
     </section>
 
-    <section class="container">
-        <p class="txt--title txt--black">Best Sellers</p>
+    <section class="container" id="best-sellers">
+        <p class="txt--header">Best Sellers</p>
         <div class="slider">
             <img id="slider__left-arrow" class="arrow" src="/assets/icons/left_arrow.svg"
                 alt="left arrow of product slider">
@@ -67,45 +67,45 @@
                     <img src="/assets/images/equipments/big_agnes_sleeping_bag.jpg" alt="product image"
                         class="slider__img">
                     <div class="slide__details">
-                        <p class="product__name">Big Agnes sleeping bag</p>
-                        <a href="#">Add to Cart</a>
+                        <p class="slide__product-name">Big Agnes sleeping bag</p>
+                        <a href="#" class="btn btn--navy">Add to Cart</a>
                     </div>
                 </div>
                 <div class="slide">
                     <img src="/assets/images/equipments/BioLite_powerstation.jpg" alt="product image"
                         class="slider__img">
                     <div class="slide__details">
-                        <p class="product__name">BioLite powerstation</p>
-                        <a href="#">Add to Cart</a>
+                        <p class="slide__product-name">BioLite powerstation</p>
+                        <a href="#" class="btn btn--navy">Add to Cart</a>
                     </div>
                 </div>
                 <div class="slide">
                     <img src="/assets/images/furnitures/Eureka_camp_table.jpg" alt="product image" class="slider__img">
                     <div class="slide__details">
-                        <p class="product__name">Eureka camp table</p>
-                        <a href="#">Add to Cart</a>
+                        <p class="slide__product-name">Eureka camp table</p>
+                        <a href="#" class="btn btn--navy">Add to Cart</a>
                     </div>
                 </div>
                 <div class="slide">
                     <img src="/assets/images/survival_kits/Coghlan's_flint_striker.jpg" alt="product image"
                         class="slider__img">
                     <div class="slide__details">
-                        <p class="product__name">Coghlan's flint striker</p>
-                        <a href="#">Add to Cart</a>
+                        <p class="slide__product-name">Coghlan's flint striker</p>
+                        <a href="#" class="btn btn--navy">Add to Cart</a>
                     </div>
                 </div>
                 <div class="slide">
                     <img src="/assets/images/kichenwares/eureka_camp_grill.jpg" alt="product image" class="slider__img">
                     <div class="slide__details">
-                        <p class="product__name">Eureka camp grill</p>
-                        <a href="#">Add to Cart</a>
+                        <p class="slide__product-name">Eureka camp grill</p>
+                        <a href="#" class="btn btn--navy">Add to Cart</a>
                     </div>
                 </div>
                 <div class="slide">
                     <img src="/assets/images/equipments/Sunnto_compass.jpg" alt="product image" class="slider__img">
                     <div class="slide__details">
-                        <p class="product__name">Sunnto compass</p>
-                        <a href="#">Add to Cart</a>
+                        <p class="slide__product-name">Sunnto compass</p>
+                        <a href="#" class="btn btn--navy">Add to Cart</a>
                     </div>
                 </div>
             </section>
@@ -114,8 +114,8 @@
         </div>
     </section>
 
-    <div class="container promotion">
-        <p class="txt--title txt--black"><span class="txt--red"> 20% off </span>sales are happening right now.</p>
+    <div class="container promotion-text">
+        <p class="txt--header"><span class="txt--red"> 20% off </span>sales are happening right now.</p>
         <p>This offer is valid in-store and online. Prices displayed reflect this additional
             discount.</p>
     </div>
@@ -125,64 +125,64 @@
             <img src="/assets/images/equipments/Coleman_sleeping_bag.jpg" alt="Coleman Blue bandit sleeping bag"
                 class="card__img card__img--secondary">
             <p class="card__text">Coleman Blue Bandit sleeping bag</p>
-            <p class="card__text "><span>54.99$</span> 34.99$ </p>
-            <button class="btn btn--addToCart">Add to basket</button>
+            <p class="card__text "><span class="txt--red txt--line-through">54.99$</span> 34.99$ </p>
+            <button class="btn btn--violet">Add to basket</button>
         </div>
         <div class="card card--secondary">
             <img src="/assets/images/equipments/big_agnes_sleeping_bag.jpg" alt="big agnes sleeping bag"
                 class="card__img card__img--secondary">
             <p class="card__text">Big Agnes sleeping bag</p>
-            <p class="card__text "><span>329.99$</span> 229.99$ </p>
-            <button class="btn btn--addToCart">Add to basket</button>
+            <p class="card__text "><span class="txt--red txt--line-through">329.99$</span> 229.99$ </p>
+            <button class="btn btn--violet">Add to basket</button>
         </div>
         <div class="card card--secondary">
             <img src="/assets/images/furnitures/Eureka_camp_table.jpg" alt="Goal zero light latern"
                 class="card__img card__img--secondary">
             <p class="card__text">Eureka camp table</p>
-            <p class="card__text "><span>124.95$</span> 93.71$ </p>
-            <button class="btn btn--addToCart">Add to basket</button>
+            <p class="card__text "><span class="txt--red txt--line-through">124.95$</span> 93.71$ </p>
+            <button class="btn btn--violet">Add to basket</button>
         </div>
         <div class="card card--secondary">
             <img src="/assets/images/equipments/goal_zero_light_latern.jpg" alt="Sunnto compass"
                 class="card__img card__img--secondary">
             <p class="card__text">Goal Zero light latern</p>
-            <p class="card__text "><span>69.95$</span> 62.95$ </p>
-            <button class="btn btn--addToCart">Add to basket</button>
+            <p class="card__text "><span class="txt--red txt--line-through">69.95$</span> 62.95$ </p>
+            <button class="btn btn--violet">Add to basket</button>
         </div>
         <div class="card card--secondary">
             <img src="/assets/images/equipments/Sunnto_compass.jpg" alt="Eureka camp grill"
                 class="card__img card__img--secondary">
             <p class="card__text">Suunto M-3 G compass</p>
-            <p class="card__text "><span>79.00$</span> 75.00$ </p>
-            <button class="btn btn--addToCart">Add to basket</button>
+            <p class="card__text "><span class="txt--red txt--line-through">79.00$</span> 75.00$ </p>
+            <button class="btn btn--violet">Add to basket</button>
         </div>
         <div class="card card--secondary">
             <img src="/assets/images/survival_kits/UCO_match.jpg" alt="Eureka camp grill"
                 class="card__img card__img--secondary">
             <p class="card__text">UCO match Containers w/25 matches</p>
-            <p class="card__text "><span>8.99$</span> 3.99$ </p>
-            <button class="btn btn--addToCart">Add to basket</button>
+            <p class="card__text "><span class="txt--red txt--line-through">8.99$</span> 3.99$ </p>
+            <button class="btn btn--violet">Add to basket</button>
         </div>
         <div class="card card--secondary">
             <img src="/assets/images/equipments/coura_tents.jpg" alt="Eureka camp grill"
                 class="card__img card__img--secondary">
             <p class="card__text">Cura Cottage by Cura outdoors</p>
-            <p class="card__text "><span>1,799.99$</span> 1,299.99$ </p>
-            <button class="btn btn--addToCart">Add to basket</button>
+            <p class="card__text "><span class="txt--red txt--line-through">1,799.99$</span> 1,299.99$ </p>
+            <button class="btn btn--violet">Add to basket</button>
         </div>
         <div class="card card--secondary">
             <img src="/assets/images/equipments/MSR_tent.jpg" alt="Eureka camp grill"
                 class="card__img card__img--secondary">
             <p class="card__text">MSR Hubba Hubba 2 Tent V9</p>
-            <p class="card__text "><span>479.95$</span> 349.99$ </p>
-            <button class="btn btn--addToCart">Add to basket</button>
+            <p class="card__text "><span class="txt--red txt--line-through">479.95$</span> 349.99$ </p>
+            <button class="btn btn--violet">Add to basket</button>
         </div>
         <div class="card card--secondary">
             <img src="/assets/images/equipments/eagles_nest_hammock.jpg" alt="Eureka camp grill"
                 class="card__img card__img--secondary">
             <p class="card__text">Eagles Nest outfitters SingleNet Hammock</p>
-            <p class="card__text "><span>54.95$</span> 41.21$ </p>
-            <button class="btn btn--addToCart">Add to basket</button>
+            <p class="card__text "><span class="txt--red txt--line-through">54.95$</span> 41.21$ </p>
+            <button class="btn btn--violet">Add to basket</button>
         </div>
     </section>
 
@@ -195,13 +195,19 @@
     <footer>
         <section class="social-media__links">
             <div class="social-media__facebook">
-                <img src="/assets/icons/facebook.png" class="social-media__icon" alt="facebook icon">
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="/assets/icons/facebook.png" class="social-media__icon" alt="facebook icon">
+                </a>
             </div>
             <div class="social-media__twitter">
-                <img src="/assets/icons/twitter.png" class="social-media__icon" alt="twitter icon">
+                <a href="https://www.twitter.com" target="_blank">
+                    <img src="/assets/icons/twitter.png" class="social-media__icon" alt="twitter icon">
+                </a>
             </div>
             <div class="social-media__instagram">
-                <img src="/assets/icons/instagram.png" class="social-media__icon" alt="instagram icon">
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="/assets/icons/instagram.png" class="social-media__icon" alt="instagram icon">
+                </a>
             </div>
         </section>
 
@@ -209,17 +215,17 @@
             <div class="footer-menu__information">
                 <h3>Information</h3>
                 <ul>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Offers and packages</a></li>
-                    <li><a href="#">Best sellers</a></li>
+                    <li><a href="#about-us">About us</a></li>
+                    <li><a href="/pages/offersAndPackages.html">Offers and packages</a></li>
+                    <li><a href="/pages/offersAndPackages.html#best-sellers">Best sellers</a></li>
                 </ul>
             </div>
             <div class="footer-menu__account">
                 <h3>Account</h3>
                 <ul>
-                    <li><a href="#">Sign up</a></li>
-                    <li><a href="#">Login</a></li>
-                    <li><a href="#">Basket</a></li>
+                    <li><a href="/pages/signup.html">Sign up</a></li>
+                    <li><a href="/pages/login.html">Login</a></li>
+                    <li><a href="/pages/basket.html">Basket</a></li>
                 </ul>
             </div>
             <div class="footer-menu__store-details">

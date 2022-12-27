@@ -14,10 +14,10 @@
 
 <body>
     <nav>
-        <div class="nav__heading">
-            <a href="../home.html" class="nav__heading-brand"><img src="/assets/icons/camping_logo.webp"
+        <div class="nav__top-menu">
+            <a href="../home.html" class="nav__top-menu-brand"><img src="/assets/icons/camping_logo.webp"
                     alt="camping company logo" class="nav__logo"></a>
-            <ul class="nav__heading-items">
+            <ul class="nav__top-menu-items">
                 <li><a href="/pages/login.html">Login</a></li>
                 <li><a href="/pages/signup.html">Sign up</a></li>
                 <li><a href="basket.html">
@@ -27,10 +27,10 @@
                         src="/assets/icons/hamburger_menu.svg" class="icon" alt="menu open button"></div>
             </ul>
         </div>
-        <div class="nav__menu" id="mobile-menu">
+        <div class="nav__bottom-menu" id="mobile-menu">
             <div class="menu__close-btn mobile-view-item" onclick="closeMenu()"><img src="/assets/icons/menu_close.svg"
                     alt="menu close button" class="icon"></div>
-            <ul class="nav__menu-items">
+            <ul class="nav__bottom-menu-items">
                 <li><a href="equipment.html">
                         <img src="/assets/icons/camping.svg" alt="camping icon" class="icon">
                         Camping Equipments</a></li>
@@ -58,9 +58,9 @@
     </section>
 
     <!-- Product catalogue container goes here -->
-    <main class="catalogue__wrapper container">
+    <main class="catalogue container">
         <div class="mobile-view-item catalogue-filter-btn">
-            <button class="btn btn--secondary" onclick="catalogueFilterToggle()">Filter</button>
+            <button class="btn btn--navy" onclick="catalogueFilterToggle()">Filter</button>
         </div>
         <div class="catalogue__filter" id="catalogue__filter">
             <!-- This will contain filters (flex-grow : 0)-->
@@ -104,46 +104,46 @@
                     <label for="eagles-nest">Eagles Nest Outfitters</label>
                     <br>
                 </fieldset>
-                <input type="submit" value="Search" class="btn--submit">
+                <input type="submit" value="Search" class="btn btn--navy">
             </form>
         </div>
-        <div class="catalogue__items-wrapper">
+        <div class="catalogue__items-container">
             <!-- All items goes here (flex-grow : 2)-->
             <section class="card__wrapper">
                 <div class="card card--secondary">
                     <img src="/assets/images/equipments/coura_tents.jpg" alt="crua cottage by Cura Outdoors"
                         class="card__img card__img--secondary">
                     <p class="card__text">Cura cottage by Cura Outdoors</p>
-                    <p class="card__text "><span>1,799.99$</span> 1,299.99$ </p>
-                    <button class="btn btn--addToCart">Add to basket</button>
+                    <p class="card__text "><span class="txt--red txt--line-through">1,799.99$</span> 1,299.99$ </p>
+                    <button class="btn btn--violet">Add to basket</button>
                 </div>
                 <div class="card card--secondary">
                     <img src="/assets/images/equipments/MSR_tent.jpg" alt="MSR Hubba Hubba 2 Tent"
                         class="card__img card__img--secondary">
                     <p class="card__text">MSR Hubba Hubba 2 Tent</p>
-                    <p class="card__text "><span>479.99$</span> 349.99$ </p>
-                    <button class="btn btn--addToCart">Add to basket</button>
+                    <p class="card__text "><span class="txt--red txt--line-through">479.99$</span> 349.99$ </p>
+                    <button class="btn btn--violet">Add to basket</button>
                 </div>
                 <div class="card card--secondary">
                     <img src="/assets/images/equipments/eagles_nest_hammock.jpg"
                         alt="Egales Nest Outfitters SingleNet Hammock" class="card__img card__img--secondary">
                     <p class="card__text">Egales Nest Outfitters SingleNet Hammock</p>
-                    <p class="card__text "><span>34.95$</span> 41.21$ </p>
-                    <button class="btn btn--addToCart">Add to basket</button>
+                    <p class="card__text "><span class="txt--red txt--line-through">34.95$</span> 41.21$ </p>
+                    <button class="btn btn--violet">Add to basket</button>
                 </div>
                 <div class="card card--secondary">
                     <img src="/assets/images/furnitures/apls_mountaineering_rocking_chair.jpg"
                         alt="APLS mountaineering rocking chair" class="card__img card__img--secondary">
                     <p class="card__text">APLS mountaineering rocking chair</p>
                     <p class="card__text ">179.99$ </p>
-                    <button class="btn btn--addToCart">Add to basket</button>
+                    <button class="btn btn--violet">Add to basket</button>
                 </div>
                 <div class="card card--secondary">
                     <img src="/assets/images/furnitures/Eureka_camp_table.jpg" alt="Eureka camp table"
                         class="card__img card__img--secondary">
                     <p class="card__text">Eureka camp table</p>
-                    <p class="card__text "><span>124.95$$</span> 93.71$ </p>
-                    <button class="btn btn--addToCart">Add to basket</button>
+                    <p class="card__text "><span class="txt--red txt--line-through">124.95$$</span> 93.71$ </p>
+                    <button class="btn btn--violet">Add to basket</button>
                 </div>
             </section>
         </div>
@@ -152,13 +152,19 @@
     <footer>
         <section class="social-media__links">
             <div class="social-media__facebook">
-                <img src="/assets/icons/facebook.png" class="social-media__icon" alt="facebook icon">
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="/assets/icons/facebook.png" class="social-media__icon" alt="facebook icon">
+                </a>
             </div>
             <div class="social-media__twitter">
-                <img src="/assets/icons/twitter.png" class="social-media__icon" alt="twitter icon">
+                <a href="https://www.twitter.com" target="_blank">
+                    <img src="/assets/icons/twitter.png" class="social-media__icon" alt="twitter icon">
+                </a>
             </div>
             <div class="social-media__instagram">
-                <img src="/assets/icons/instagram.png" class="social-media__icon" alt="instagram icon">
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="/assets/icons/instagram.png" class="social-media__icon" alt="instagram icon">
+                </a>
             </div>
         </section>
 
@@ -166,17 +172,17 @@
             <div class="footer-menu__information">
                 <h3>Information</h3>
                 <ul>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Offers and packages</a></li>
-                    <li><a href="#">Best sellers</a></li>
+                    <li><a href="../home.html#about-us">About us</a></li>
+                    <li><a href="offersAndPackages.html">Offers and packages</a></li>
+                    <li><a href="offersAndPackages.html#best-sellers">Best sellers</a></li>
                 </ul>
             </div>
             <div class="footer-menu__account">
                 <h3>Account</h3>
                 <ul>
-                    <li><a href="#">Sign up</a></li>
-                    <li><a href="#">Login</a></li>
-                    <li><a href="#">Basket</a></li>
+                    <li><a href="signup.html">Sign up</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="basket.html">Basket</a></li>
                 </ul>
             </div>
             <div class="footer-menu__store-details">

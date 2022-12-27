@@ -11,10 +11,10 @@
 
 <body>
     <nav>
-        <div class="nav__heading">
-            <a href="../home.html" class="nav__heading-brand"><img src="/assets/icons/camping_logo.webp"
+        <div class="nav__top-menu">
+            <a href="../home.html" class="nav__top-menu-brand"><img src="/assets/icons/camping_logo.webp"
                     alt="camping company logo" class="nav__logo"></a>
-            <ul class="nav__heading-items">
+            <ul class="nav__top-menu-items">
                 <li><a href="#">Login</a></li>
                 <li><a href="/pages/signup.html">Sign up</a></li>
                 <li><a href="basket.html">
@@ -24,10 +24,10 @@
                         src="/assets/icons/hamburger_menu.svg" class="icon" alt="menu open button"></div>
             </ul>
         </div>
-        <div class="nav__menu" id="mobile-menu">
+        <div class="nav__bottom-menu" id="mobile-menu">
             <div class="menu__close-btn mobile-view-item" onclick="closeMenu()"><img src="/assets/icons/menu_close.svg"
                     alt="menu close button" class="icon"></div>
-            <ul class="nav__menu-items">
+            <ul class="nav__bottom-menu-items">
                 <li><a href="equipment.html">
                         <img src="/assets/icons/camping.svg" alt="camping icon" class="icon">
                         Camping Equipments</a></li>
@@ -44,26 +44,27 @@
         </div>
     </nav>
 
-    <main class="container container--half">
-        <div class="login-form-container container--navy">
-            <p class="txt--title">
+    <main class="login-form-flexbox">
+        <form action="" class="login-form">
+            <p class="form__header">
                 Log In
             </p>
-            <form action="" class="login-form">
+            <div class="input-container login-input-container">
                 <div>
-                    <label for="email" class=" input__label input__label--secondary">Email</label>
-                    <input type="email" name="login-email" id="login-email" class="input input--secondary">
+                    <label for="email" class="form__label login-form__label">Email</label>
+                    <input type="email" name="login-email" id="login-email" class="login-form-input">
                 </div>
                 <div>
-                    <label for="password" class="input__label input__label--secondary">Password</label>
+                    <label for="password" class="form__label login-form__label">Password</label>
                     <input type="password" name="login-email-password" id="login-email-password"
-                        class="input input--secondary">
+                        class="login-form-input">
                 </div>
-                <input type="submit" value="Login" class="btn btn--submit">
-            </form>
+            </div>
+            <input type="submit" value="Login" class="btn btn--grey">
             <a href="#" class="forgot-password">Forgot password</a>
-        </div>
+        </form>
     </main>
+
     <footer>
         <section class="social-media__links">
             <div class="social-media__facebook">

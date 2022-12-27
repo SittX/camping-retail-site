@@ -13,24 +13,26 @@
 </head>
 
 <body>
-    <div class="modal__container" id="modal-container">
+    <!-- <div class="modal__container" id="modal-container">
         <div class="modal">
             <p class="modal__text">New deals and package are happening in this season of the year.</p>
             <p class="modal__text">Subscribe to our newsletter!</p>
             <form action="#" class="modal__form">
                 <input type="email" name="user_email" id="newsletter-email" class="modal__form-input"
                     placeholder="Enter your email address here">
-                <input type="submit" value="Subscribe" class="btn btn--secondary">
+                <input type="submit" value="Subscribe" class="btn btn--grey">
             </form>
-            <button class="btn btn--close" onclick="closeModal()">Close X </button>
+            <button class="btn btn--red" onclick="closeModal()">Close X </button>
         </div>
-    </div>
+    </div> -->
 
     <nav>
-        <div class="nav__heading">
-            <a href="home.html" class="nav__heading-brand"><img src="/assets/icons/camping_logo.webp"
+        <div class="nav__top-menu">
+
+            <a href="home.html" class="nav__top-menu-brand"><img src="/assets/icons/camping_logo.webp"
                     alt="camping company logo" class="nav__logo"></a>
-            <ul class="nav__heading-items">
+
+            <ul class="nav__top-menu-items">
                 <li><a href="/pages/login.html">Login</a></li>
                 <li><a href="/pages/signup.html">Sign up</a></li>
                 <li><a href="/pages/basket.html">
@@ -39,35 +41,37 @@
                 <div class="menu__open-btn mobile-view-item" onclick="openMenu()"><img
                         src="/assets/icons/hamburger_menu.svg" class="icon" alt="menu open button"></div>
             </ul>
+
         </div>
-        <div class="nav__menu" id="mobile-menu">
+
+        <div class="nav__bottom-menu" id="mobile-menu">
             <div class="menu__close-btn mobile-view-item" onclick="closeMenu()"><img src="/assets/icons/menu_close.svg"
                     alt="menu close button" class="icon"></div>
-            <ul class="nav__menu-items">
-                <li class="nav__menu-item"><a href="/pages/equipment.html">
+            <ul class="nav__bottom-menu-items">
+                <li class="nav__bottom-menu-item"><a href="/pages/equipment.html">
                         <img src="/assets/icons/camping.svg" alt="camping icon" class="icon">
                         Camping Equipments</a>
-                    <ul class="nav__menu-dropdown">
-                        <li class="nav__menu-dropdown-item"><a href="/pages/equipment.html#sleeping-bag">Sleeping
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-menu-item"><a href="/pages/equipment.html#sleeping-bag">Sleeping
                                 bag</a></li>
-                        <li class="nav__menu-dropdown-item"><a href="pages/equipment.html#electronics">Electronics
+                        <li class="dropdown-menu-item"><a href="pages/equipment.html#electronics">Electronics
                             </a></li>
-                        <li class="nav__menu-dropdown-item"><a href="pages/equipment.html#kitchenwares">Kitchenwares</a>
+                        <li class="dropdown-menu-item"><a href="pages/equipment.html#kitchenwares">Kitchenwares</a>
                         </li>
                     </ul>
                 </li>
 
-                <li class="nav__menu-item">
+                <li class="nav__bottom-menu-item">
                     <a href="/pages/furniture.html">
                         <img src="/assets/icons/furniture.svg" alt="furniture icon" class="icon">
                         Furnitures</a>
                 </li>
 
-                <li class="nav__menu-item"><a href="/pages/offersAndPackages.html">
+                <li class="nav__bottom-menu-item"><a href="/pages/offersAndPackages.html">
                         <img src="/assets/icons/sell.svg" alt="sell icon" class="icon">
                         Offers and packages</a></li>
 
-                <li class="nav__menu-item"><a href="/pages/reviews.html">
+                <li class="nav__bottom-menu-item"><a href="/pages/reviews.html">
                         <img src="/assets/icons/review.svg" alt="reviews icon" class="icon">
                         Reviews</a></li>
             </ul>
@@ -75,137 +79,123 @@
     </nav>
     <div class="banner">
         <p class="banner__header">Sales are happening</p>
-        <button class="btn">Shop Now</button>
+        <button class="btn btn--navy">Shop Now</button>
     </div>
-    <h4 class="txt--title txt--black">Best sellers</h4>
+
+    <p class="txt--header">Best sellers</p>
+
     <div class="slider">
-        <img id="slider__left-arrow" class="arrow" src="/assets/icons/left_arrow.svg"
+        <img id="slider__left-arrow" class="slider__arrow" src="/assets/icons/left_arrow.svg"
             alt="left arrow of product slider">
         <section class="slide__container" id="slide__container">
             <div class="slide">
                 <img src="/assets/images/equipments/big_agnes_sleeping_bag.jpg" alt="product image" class="slider__img">
                 <div class="slide__details">
-                    <p class="product__name">Big Agnes sleeping bag</p>
-                    <a href="#">Add to Cart</a>
+                    <p class="slide__product-name">Big Agnes sleeping bag</p>
+                    <a href="#" class="btn btn--navy">Add to Cart</a>
                 </div>
             </div>
             <div class="slide">
                 <img src="/assets/images/equipments/BioLite_powerstation.jpg" alt="product image" class="slider__img">
                 <div class="slide__details">
-                    <p class="product__name">BioLite powerstation</p>
-                    <a href="#">Add to Cart</a>
+                    <p class="slide__product-name">BioLite powerstation</p>
+                    <a href="#" class="btn btn--navy">Add to Cart</a>
                 </div>
             </div>
             <div class="slide">
                 <img src="/assets/images/furnitures/Eureka_camp_table.jpg" alt="product image" class="slider__img">
                 <div class="slide__details">
-                    <p class="product__name">Eureka camp table</p>
-                    <a href="#">Add to Cart</a>
+                    <p class="slide__product-name">Eureka camp table</p>
+                    <a href="#" class="btn btn--navy">Add to Cart</a>
                 </div>
             </div>
             <div class="slide">
                 <img src="/assets/images/survival_kits/Coghlan's_flint_striker.jpg" alt="product image"
                     class="slider__img">
                 <div class="slide__details">
-                    <p class="product__name">Coghlan's flint striker</p>
-                    <a href="#">Add to Cart</a>
+                    <p class="slide__product-name">Coghlan's flint striker</p>
+                    <a href="#" class="btn btn--navy">Add to Cart</a>
                 </div>
             </div>
             <div class="slide">
                 <img src="/assets/images/kichenwares/eureka_camp_grill.jpg" alt="product image" class="slider__img">
                 <div class="slide__details">
-                    <p class="product__name">Eureka camp grill</p>
-                    <a href="#">Add to Cart</a>
+                    <p class="slide__product-name">Eureka camp grill</p>
+                    <a href="#" class="btn btn--navy">Add to Cart</a>
                 </div>
             </div>
             <div class="slide">
                 <img src="/assets/images/equipments/Sunnto_compass.jpg" alt="product image" class="slider__img">
                 <div class="slide__details">
-                    <p class="product__name">Sunnto compass</p>
-                    <a href="#">Add to Cart</a>
+                    <p class="slide__product-name">Sunnto compass</p>
+                    <a href="#" class="btn btn--navy">Add to Cart</a>
                 </div>
             </div>
         </section>
-        <img id="slider__right-arrow" class="arrow" src="/assets/icons/right_arrow.svg"
+        <img id="slider__right-arrow" class="slider__arrow" src="/assets/icons/right_arrow.svg"
             alt="right arrow of product slider">
     </div>
-    <!-- <section class="carousel">
-        <ul class="carousel__viewport">
-            <li id="carousel__slide1" class="carousel__slide">
-                <div class="carousel__slider-btn">
-                    <a href="#carousel__slide4" class="carousel__prev"><img src="/assets/icons/left_arrow.svg"
-                            alt="back arrow"></a>
-                    <a href="#carousel__slide2" class="carousel__next"><img src="/assets/icons/right_arrow.svg"
-                            alt="forware arrow"></a>
-                </div>
-            </li>
-            <li class="carousel__slide" id="carousel__slide2">
-                <div class="carousel__slider-btn">
-                    <a href="#carousel__slide1" class="carousel__prev"><img src="/assets/icons/left_arrow.svg"
-                            alt="back arrow"></a>
-                    <a href="#carousel__slide3" class="carousel__next"><img src="/assets/icons/right_arrow.svg"
-                            alt="forware arrow"></a>
-                </div>
-            </li>
-            <li id="carousel__slide3" class="carousel__slide">
-                <div class="carousel__slider-btn">
-                    <a href="#carousel__slide2" class="carousel__prev"><img src="/assets/icons/left_arrow.svg"
-                            alt="back arrow"></a>
-                    <a href="#carousel__slide4" class="carousel__next"><img src="/assets/icons/right_arrow.svg"
-                            alt="forware arrow"></a>
-                </div>
-            </li>
-            <li id="carousel__slide4" class="carousel__slide">
-                <div class="carousel__slider-btn">
-                    <a href="#carousel__slide3" class="carousel__prev"><img src="/assets/icons/left_arrow.svg"
-                            alt="back arrow"></a>
-                    <a href="#carousel__slide1" class="carousel__next"><img src="/assets/icons/right_arrow.svg"
-                            alt="forware arrow"></a>
-                </div>
-            </li>
-        </ul>
-    </section> -->
 
     <section class="container">
         <div class="container__header">
             Categories
         </div>
+
         <div class="card__wrapper">
             <div class="card">
                 <img src="/assets/images/camping_equipment.jpg" alt="camping equipments image" class="card__img">
                 <div class="card__overlay">
-                    <p class="card__overlay-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ut
-                        maiores eos quam eum repudiandae.</p>
-                    <a href="/pages/equipment.html">Shop</a>
+                    <p class="card__overlay-text">
+                        You'll find all the gear you need for your next outdoor
+                        adventure. From tents and sleeping bags to backpacks and cookware,you can find it in the
+                        equipment page.
+                    </p>
+                    <a href="/pages/equipment.html" class="card__navigation-link">Go to equipment page</a>
                 </div>
             </div>
 
             <div class="card">
                 <img src="/assets/images/camping_furniture.jpg" alt="camping furniture image" class="card__img">
                 <div class="card__overlay">
-                    <p class="card__overlay-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ut
-                        maiores eos quam eum repudiandae.</p>
-                    <a href="/pages/furniture.html">Shop</a>
+                    <p class="card__overlay-text">
+                        In furniture page ,you'll find a wide selection of comfortable and convenient
+                        outdoor furniture for your campsite. From foldable chairs and tables to portable hammocks and
+                        cots, it has everything you need to relax and enjoy the great outdoors.
+                    </p>
+                    <a href="/pages/furniture.html" class="card__navigation-link">Go to furniture page</a>
                 </div>
             </div>
             <div class="card">
                 <img src="/assets/images/offers.png" alt="special offer image" class="card__img">
                 <div class="card__overlay">
-                    <p class="card__overlay-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ut
-                        maiores eos quam eum repudiandae.</p>
-                    <a href="/pages/offersAndPackages.html">Shop</a>
+                    <p class="card__overlay-text">
+                        In offers and packages page, you'll find a variety of special deals on our high-quality camping
+                        gear and equipment at a discounted
+                        price. Check back often for new deals and discounts, or sign up for our newsletter to stay
+                        informed of the latest offers.
+                    </p>
+                    <a href="/pages/offersAndPackages.html" class="card__navigation-link">Go to offers and packages
+                        page</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="container">
+    <section class="container" id="about-us">
         <div class="container__header">About us</div>
-        <div class="container__content about ">
-            <p class="txt--primary">
+        <div class="about-us-container">
+            <p class="about-us-text">
                 Campmor is a recreational equipment retailer that was established in Bogota, New Jersey in
                 1978. The retail store is in Paramus, New Jersey, and offers much of what is offered online
                 and more.
+                <br>
+                <br>
+                Our camping retail shop is a one-stop destination for all your outdoor needs. We offer a wide range of
+                high-quality camping gear and equipment, including tents, sleeping bags, backpacks, cookware, and more.
+                Our knowledgeable and friendly staff are always on hand to help you find the perfect gear for your next
+                adventure. Whether you're an experienced camper or just starting out, we have something for everyone.
+                Stop by today and see why we are the go-to shop for all your camping needs!
+                <br>
                 <br>
                 <img src="/assets/icons/home_pin.svg" class="icon" alt="home pin icon">
                 <strong>810 Route 17 North Paramus, New Jersey 07652</strong>
@@ -222,13 +212,19 @@
     <footer>
         <section class="social-media__links">
             <div class="social-media__facebook">
-                <img src="/assets/icons/facebook.png" class="social-media__icon" alt="facebook icon">
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="/assets/icons/facebook.png" class="social-media__icon" alt="facebook icon">
+                </a>
             </div>
             <div class="social-media__twitter">
-                <img src="/assets/icons/twitter.png" class="social-media__icon" alt="twitter icon">
+                <a href="https://www.twitter.com" target="_blank">
+                    <img src="/assets/icons/twitter.png" class="social-media__icon" alt="twitter icon">
+                </a>
             </div>
             <div class="social-media__instagram">
-                <img src="/assets/icons/instagram.png" class="social-media__icon" alt="instagram icon">
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="/assets/icons/instagram.png" class="social-media__icon" alt="instagram icon">
+                </a>
             </div>
         </section>
 
@@ -236,17 +232,17 @@
             <div class="footer-menu__information">
                 <h3>Information</h3>
                 <ul>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Offers and packages</a></li>
-                    <li><a href="#">Best sellers</a></li>
+                    <li><a href="#about-us">About us</a></li>
+                    <li><a href="/pages/offersAndPackages.html">Offers and packages</a></li>
+                    <li><a href="/pages/offersAndPackages.html#best-sellers">Best sellers</a></li>
                 </ul>
             </div>
             <div class="footer-menu__account">
                 <h3>Account</h3>
                 <ul>
-                    <li><a href="#">Sign up</a></li>
-                    <li><a href="#">Login</a></li>
-                    <li><a href="#">Basket</a></li>
+                    <li><a href="/pages/signup.html">Sign up</a></li>
+                    <li><a href="/pages/login.html">Login</a></li>
+                    <li><a href="/pages/basket.html">Basket</a></li>
                 </ul>
             </div>
             <div class="footer-menu__store-details">
