@@ -17,15 +17,15 @@
         <div class="nav__top-menu">
             <a href="../home.html" class="nav__top-menu-brand"><img src="/assets/icons/camping_logo.webp"
                     alt="camping company logo" class="nav__logo"></a>
-            <ul class="nav__top-menu-items">
-                <li><a href="/pages/login.html">Login</a></li>
-                <li><a href="/pages/signup.html">Sign up</a></li>
-                <li><a href="basket.html">
+            <div class="nav__top-menu-items">
+                <div><a href="/pages/login.html">Login</a></div>
+                <div><a href="/pages/signup.html">Sign up</a></div>
+                <div><a href="basket.html">
                         <img src="/assets/icons/shopping_cart.svg" alt="shopping cart icon" class="icon">
-                        Basket</a></li>
+                        Basket</a></div>
                 <div class="menu__open-btn mobile-view-item" onclick="openMenu()"><img
                         src="/assets/icons/hamburger_menu.svg" class="icon" alt="menu open button"></div>
-            </ul>
+            </div>
         </div>
         <div class="nav__bottom-menu" id="mobile-menu">
             <div class="menu__close-btn mobile-view-item" onclick="closeMenu()"><img src="/assets/icons/menu_close.svg"
@@ -48,20 +48,20 @@
     </nav>
 
     <!-- Searchbox for searching product goes here -->
-    <section class="searchbox-container">
+    <div class="searchbox-container">
         <div class="searchbox" id="searchbox">
             <input class="searchbox__input" type="text" name="search-input" placeholder="Search" id="searchbox__input">
             <button class="searchButton">
                 <img src="/assets/icons/search.svg" alt="search icon" class="icon">
             </button>
         </div>
-    </section>
+    </div>
 
-    <section class="iframe-video-container">
-        <iframe src="https://www.youtube.com/embed/Lpl_IewTTKI?autoplay=1" title="YouTube video player" frameborder="0"
+    <div class="iframe-video-container">
+        <iframe src="https://www.youtube.com/embed/Lpl_IewTTKI?autoplay=1" title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen class="iframe-video"></iframe>
-    </section>
+    </div>
 
     <main class="catalogue">
 
@@ -70,43 +70,43 @@
         </div>
 
         <div class="catalogue__filter" id="catalogue__filter">
-            <form action="" class="catalogue__vendor-selection-form" onsubmit="return false">
+            <form action="#" class="catalogue__vendor-selection-form" onsubmit="return false">
                 <fieldset class="catalogue__filter-fieldset">
                     <legend class="catalogue__filter-legend">Product's vendor</legend>
-                    <input type="checkbox" name="" id="eureka">
+                    <input type="checkbox" name="eureka" id="eureka">
                     <label for="eureka">Eureka</label>
                     <br>
-                    <input type="checkbox" name="" id="apls-mountaineering">
+                    <input type="checkbox" name="apls-mountaineering" id="apls-mountaineering">
                     <label for="apls-mountaineering">Apls Mountaineering</label>
                     <br>
-                    <input type="checkbox" name="" id="helinox">
+                    <input type="checkbox" name="helinox" id="helinox">
                     <label for="helinox">Helinox</label>
                     <br>
-                    <input type="checkbox" name="" id="uco">
+                    <input type="checkbox" name="uco" id="uco">
                     <label for="uco">UCO</label>
                     <br>
-                    <input type="checkbox" name="" id="gsi-outdoors">
+                    <input type="checkbox" name="gsi-outdoors" id="gsi-outdoors">
                     <label for="gsi-outdoors">GSI Outdoors</label>
                     <br>
-                    <input type="checkbox" name="" id="biolite">
+                    <input type="checkbox" name="biolite" id="biolite">
                     <label for="biolite">BioLite</label>
                     <br>
-                    <input type="checkbox" name="" id="goal-zero">
+                    <input type="checkbox" name="goal-zero" id="goal-zero">
                     <label for="goal-zero">Goal Zero</label>
                     <br>
-                    <input type="checkbox" name="" id="sunnto">
+                    <input type="checkbox" name="sunnto" id="sunnto">
                     <label for="sunnto">Sunnto</label>
                     <br>
-                    <input type="checkbox" name="" id="cura-outdoors">
+                    <input type="checkbox" name="cura-outdoors" id="cura-outdoors">
                     <label for="cura-outdoors">Cura Outdoors</label>
                     <br>
-                    <input type="checkbox" name="" id="coleman">
+                    <input type="checkbox" name="coleman" id="coleman">
                     <label for="coleman">Coleman</label>
                     <br>
-                    <input type="checkbox" name="" id="big-agnes">
+                    <input type="checkbox" name="big-agnes" id="big-agnes">
                     <label for="big-agnes">Big Agnes</label>
                     <br>
-                    <input type="checkbox" name="" id="eagles-nest">
+                    <input type="checkbox" name="eagles-nest" id="eagles-nest">
                     <label for="eagles-nest">Eagles Nest Outfitters</label>
                     <br>
                 </fieldset>
@@ -115,7 +115,7 @@
             </form>
         </div>
         <div class="catalogue__items-container">
-            <section class="card__wrapper">
+            <div class="card__wrapper">
                 <div class="card card--secondary" id="sleeping-bag">
                     <img src="/assets/images/equipments/Coleman_sleeping_bag.jpg" alt="Coleman Blue bandit sleeping bag"
                         class="card__img card__img--secondary">
@@ -197,12 +197,12 @@
                     <p class="card__text ">4.99$ </p>
                     <button class="btn btn--violet">Add to basket</button>
                 </div>
-            </section>
+            </div>
         </div>
     </main>
 
     <footer>
-        <section class="social-media__links">
+        <div class="social-media__links">
             <div class="social-media__facebook">
                 <a href="https://www.facebook.com" target="_blank">
                     <img src="/assets/icons/facebook.png" class="social-media__icon" alt="facebook icon">
@@ -218,9 +218,9 @@
                     <img src="/assets/icons/instagram.png" class="social-media__icon" alt="instagram icon">
                 </a>
             </div>
-        </section>
+        </div>
 
-        <section class="footer-menu">
+        <div class="footer-menu">
             <div class="footer-menu__information">
                 <h3>Information</h3>
                 <ul>
@@ -252,7 +252,7 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </div>
     </footer>
     <script src="/js/main.js"></script>
 </body>

@@ -14,15 +14,15 @@
         <div class="nav__top-menu">
             <a href="../home.html" class="nav__top-menu-brand"><img src="/assets/icons/camping_logo.webp"
                     alt="camping company logo" class="nav__logo"></a>
-            <ul class="nav__top-menu-items">
-                <li><a href="#">Login</a></li>
-                <li><a href="/pages/signup.html">Sign up</a></li>
-                <li><a href="basket.html">
+            <div class="nav__top-menu-items">
+                <div><a href="#">Login</a></div>
+                <div><a href="/pages/signup.html">Sign up</a></div>
+                <div><a href="basket.html">
                         <img src="/assets/icons/shopping_cart.svg" alt="shopping cart icon" class="icon">
-                        Basket</a></li>
+                        Basket</a></div>
                 <div class="menu__open-btn mobile-view-item" onclick="openMenu()"><img
                         src="/assets/icons/hamburger_menu.svg" class="icon" alt="menu open button"></div>
-            </ul>
+            </div>
         </div>
         <div class="nav__bottom-menu" id="mobile-menu">
             <div class="menu__close-btn mobile-view-item" onclick="closeMenu()"><img src="/assets/icons/menu_close.svg"
@@ -45,17 +45,17 @@
     </nav>
 
     <main class="login-form-flexbox">
-        <form action="" class="login-form">
+        <form action="#" class="login-form">
             <p class="form__header">
                 Log In
             </p>
             <div class="input-container login-input-container">
                 <div>
-                    <label for="email" class="form__label login-form__label">Email</label>
+                    <label for="login-email" class="form__label login-form__label">Email</label>
                     <input type="email" name="login-email" id="login-email" class="login-form-input">
                 </div>
                 <div>
-                    <label for="password" class="form__label login-form__label">Password</label>
+                    <label for="login-email-password" class="form__label login-form__label">Password</label>
                     <input type="password" name="login-email-password" id="login-email-password"
                         class="login-form-input">
                 </div>
@@ -66,7 +66,7 @@
     </main>
 
     <footer>
-        <section class="social-media__links">
+        <div class="social-media__links">
             <div class="social-media__facebook">
                 <img src="/assets/icons/facebook.png" class="social-media__icon" alt="facebook icon">
             </div>
@@ -76,9 +76,9 @@
             <div class="social-media__instagram">
                 <img src="/assets/icons/instagram.png" class="social-media__icon" alt="instagram icon">
             </div>
-        </section>
+        </div>
 
-        <section class="footer-menu">
+        <div class="footer-menu">
             <div class="footer-menu__information">
                 <h3>Information</h3>
                 <ul>
@@ -110,7 +110,7 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </div>
     </footer>
     <script src="../js/main.js"></script>
 </body>
