@@ -31,9 +31,18 @@
             <div class="menu__close-btn mobile-view-item" onclick="closeMenu()"><img src="/assets/icons/menu_close.svg"
                     alt="menu close button" class="icon"></div>
             <ul class="nav__bottom-menu-items">
-                <li><a href="equipment.html">
+                <li class="nav__bottom-menu-item"><a href="/pages/equipment.html">
                         <img src="/assets/icons/camping.svg" alt="camping icon" class="icon">
-                        Camping Equipments</a></li>
+                        Camping Equipments</a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-menu-item"><a href="/pages/equipment.html#sleeping-bag">Sleeping
+                                bag</a></li>
+                        <li class="dropdown-menu-item"><a href="/pages/equipment.html#electronics">Electronics
+                            </a></li>
+                        <li class="dropdown-menu-item"><a href="/pages/equipment.html#kitchenwares">Kitchenwares</a>
+                        </li>
+                    </ul>
+                </li>
                 <li><a href="furniture.html">
                         <img src="/assets/icons/furniture.svg" alt="furniture icon" class="icon">
                         Furnitures</a></li>
@@ -47,8 +56,13 @@
         </div>
     </nav>
 
-    <div class="reviews__container">
-        <!-- This is where each review item goes here -->
+    <div class="contact-form-nav">
+        <a class="contact-form-nav-btn" href="#contact-form">Contact Us <img src="/assets/icons/review.svg"
+                alt="review-icon" class="icon"></a>
+    </div>
+
+    <section class="reviews__container">
+        <h3 class="container__header">Product Reviews</h3>
         <div class="review__item">
             <!-- Rating section -->
             <div class="product-rating">
@@ -228,11 +242,14 @@
                 </div>
             </div>
         </div>
+    </section>
+
+    <div class="review-product">
+        <button class="btn review-product-btn">Write a review about a product</button>
     </div>
 
-    <!-- Add sticky btn that will navigate to this form . -->
     <div class="contact-form-container">
-        <form action="#" class="form contact-form">
+        <form action="#" class="form contact-form" id="contact-form">
             <p class="form__header">Contact Us</p>
             <div class="input-container">
                 <div>

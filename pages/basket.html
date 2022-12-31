@@ -32,16 +32,26 @@
             <div class="menu__close-btn mobile-view-item" onclick="closeMenu()"><img src="/assets/icons/menu_close.svg"
                     alt="menu close button" class="icon"></div>
             <ul class="nav__bottom-menu-items">
-                <li><a href="equipment.html">
+
+                <li class="nav__bottom-menu-item"><a href="/pages/equipment.html">
                         <img src="/assets/icons/camping.svg" alt="camping icon" class="icon">
-                        Camping Equipments</a></li>
-                <li><a href="furniture.html">
+                        Camping Equipments</a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-menu-item"><a href="/pages/equipment.html#sleeping-bag">Sleeping
+                                bag</a></li>
+                        <li class="dropdown-menu-item"><a href="/pages/equipment.html#electronics">Electronics
+                            </a></li>
+                        <li class="dropdown-menu-item"><a href="/pages/equipment.html#kitchenwares">Kitchenwares</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav__bottom-menu-item"><a href="furniture.html">
                         <img src="/assets/icons/furniture.svg" alt="furniture icon" class="icon">
                         Furnitures</a></li>
-                <li><a href="offersAndPackages.html">
+                <li class="nav__bottom-menu-item"><a href="offersAndPackages.html">
                         <img src="/assets/icons/sell.svg" alt="sell icon" class="icon">
                         Offers and packages</a></li>
-                <li><a href="reviews.html">
+                <li class="nav__bottom-menu-item"><a href="reviews.html">
                         <img src="/assets/icons/review.svg" alt="reviews icon" class="icon">
                         Reviews</a></li>
             </ul>
@@ -77,7 +87,7 @@
                 <div class="cart__item-info">
                     <p class="cart__item-name">UCO Utility spork</p>
                     <p class="cart__item-price">Price - 4.99 $</p>
-                    <p class="cart__item-quantity">Quantity - 1</p>
+                    <p class="cart__item-quantity">Quantity - 2</p>
                 </div>
                 <button class="btn btn--grey">X</button>
             </div>
@@ -105,7 +115,7 @@
                 <label for="credit-card-cvv">CVV</label>
                 <input type="number" class="payment-form__input" name="credit-card-cvv" id="credit-card-cvv">
             </form>
-            <p class="payment-total">Total - 2039.96 $</p>
+            <p class="payment-total">Total - 2044.95 $</p>
             <button class="btn btn--green">Proceed to check out</button>
         </div>
     </div>

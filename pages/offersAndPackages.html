@@ -31,9 +31,18 @@
             <div class="menu__close-btn mobile-view-item" onclick="closeMenu()"><img src="/assets/icons/menu_close.svg"
                     alt="menu close button" class="icon"></div>
             <ul class="nav__bottom-menu-items">
-                <li><a href="equipment.html">
+                <li class="nav__bottom-menu-item"><a href="/pages/equipment.html">
                         <img src="/assets/icons/camping.svg" alt="camping icon" class="icon">
-                        Camping Equipments</a></li>
+                        Camping Equipments</a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-menu-item"><a href="/pages/equipment.html#sleeping-bag">Sleeping
+                                bag</a></li>
+                        <li class="dropdown-menu-item"><a href="/pages/equipment.html#electronics">Electronics
+                            </a></li>
+                        <li class="dropdown-menu-item"><a href="/pages/equipment.html#kitchenwares">Kitchenwares</a>
+                        </li>
+                    </ul>
+                </li>
                 <li><a href="furniture.html">
                         <img src="/assets/icons/furniture.svg" alt="furniture icon" class="icon">
                         Furnitures</a></li>
@@ -57,8 +66,8 @@
         </div>
     </div>
 
-    <div class="container" id="best-sellers">
-        <p class="txt--header">Best Sellers</p>
+    <section class="container" id="best-sellers">
+        <h3 class="container__header">Best Sellers</h3>
         <div class="slider">
             <img id="slider__left-arrow" class="arrow" src="/assets/icons/left_arrow.svg"
                 alt="left arrow of product slider">
@@ -112,12 +121,13 @@
             <img id="slider__right-arrow" class="arrow" src="/assets/icons/right_arrow.svg"
                 alt="right arrow of product slider">
         </div>
-    </div>
+    </section>
 
     <div class="container promotion-text">
         <p class="txt--header"><span class="txt--red"> 20% off </span>sales are happening right now.</p>
-        <p>This offer is valid in-store and online. Prices displayed reflect this additional
-            discount.</p>
+        <p>
+            This offer is valid both in-store and online. The displayed price reflects the additional discount.
+        </p>
     </div>
 
     <div class="container card__wrapper">
@@ -215,17 +225,17 @@
             <div class="footer-menu__information">
                 <h3>Information</h3>
                 <ul>
-                    <li><a href="#about-us">About us</a></li>
-                    <li><a href="/pages/offersAndPackages.html">Offers and packages</a></li>
-                    <li><a href="/pages/offersAndPackages.html#best-sellers">Best sellers</a></li>
+                    <li><a href="../home.html#about-us">About us</a></li>
+                    <li><a href="#">Offers and packages</a></li>
+                    <li><a href="#best-sellers">Best sellers</a></li>
                 </ul>
             </div>
             <div class="footer-menu__account">
                 <h3>Account</h3>
                 <ul>
-                    <li><a href="/pages/signup.html">Sign up</a></li>
-                    <li><a href="/pages/login.html">Login</a></li>
-                    <li><a href="/pages/basket.html">Basket</a></li>
+                    <li><a href="signup.html">Sign up</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="basket.html">Basket</a></li>
                 </ul>
             </div>
             <div class="footer-menu__store-details">

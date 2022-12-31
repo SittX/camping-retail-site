@@ -28,23 +28,31 @@
             <div class="menu__close-btn mobile-view-item" onclick="closeMenu()"><img src="/assets/icons/menu_close.svg"
                     alt="menu close button" class="icon"></div>
             <ul class="nav__bottom-menu-items">
-                <li><a href="equipment.html">
+                <li class="nav__bottom-menu-item"><a href="equipment.html">
                         <img src="/assets/icons/camping.svg" alt="camping icon" class="icon">
-                        Camping Equipments</a></li>
-                <li><a href="furniture.html">
+                        Camping Equipments</a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-menu-item"><a href="equipment.html#sleeping-bag">Sleeping
+                                bag</a></li>
+                        <li class="dropdown-menu-item"><a href="equipment.html#electronics">Electronics
+                            </a></li>
+                        <li class="dropdown-menu-item"><a href="equipment.html#kitchenwares">Kitchenwares</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav__bottom-menu-item"><a href="furniture.html">
                         <img src="/assets/icons/furniture.svg" alt="furniture icon" class="icon">
                         Furnitures</a></li>
-                <li><a href="offersAndPackages.html">
+                <li class="nav__bottom-menu-item"><a href="offersAndPackages.html">
                         <img src="/assets/icons/sell.svg" alt="sell icon" class="icon">
                         Offers and packages</a></li>
-                <li><a href="reviews.html">
+                <li class="nav__bottom-menu-item"><a href="reviews.html">
                         <img src="/assets/icons/review.svg" alt="reviews icon" class="icon">
                         Reviews</a></li>
             </ul>
         </div>
     </nav>
     <main class="signup-form-flexbox">
-        <!-- <div class="signup-form-wrapper"> -->
         <form action="#" class="form signup-form">
             <p class="form__header">Sign Up</p>
             <div class="input-container">
@@ -86,18 +94,23 @@
                 <input type="submit" value="Sign up" class="btn btn--grey">
             </div>
         </form>
-        <!-- </div> -->
     </main>
     <footer>
         <div class="social-media__links">
             <div class="social-media__facebook">
-                <img src="/assets/icons/facebook.png" class="social-media__icon" alt="facebook icon">
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="/assets/icons/facebook.png" class="social-media__icon" alt="facebook icon">
+                </a>
             </div>
             <div class="social-media__twitter">
-                <img src="/assets/icons/twitter.png" class="social-media__icon" alt="twitter icon">
+                <a href="https://www.twitter.com" target="_blank">
+                    <img src="/assets/icons/twitter.png" class="social-media__icon" alt="twitter icon">
+                </a>
             </div>
             <div class="social-media__instagram">
-                <img src="/assets/icons/instagram.png" class="social-media__icon" alt="instagram icon">
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="/assets/icons/instagram.png" class="social-media__icon" alt="instagram icon">
+                </a>
             </div>
         </div>
     </footer>

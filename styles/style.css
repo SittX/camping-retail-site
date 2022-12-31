@@ -4,7 +4,7 @@
     --black: #000000;
     --navy: #335d88;
     --green: rgb(129, 241, 129);
-    --violet: rgb(71, 71, 163);
+    --violet: rgb(126, 126, 247);
 
     /* Font family */
     --font: 'Poppins', sans-serif;
@@ -59,7 +59,7 @@ a {
 
 .pdf__viewer {
     width: 80%;
-    height: 800px;
+    height: 500px;
     border-radius: 10px;
 }
 
@@ -201,6 +201,7 @@ a {
 
 .modal {
     background-color: var(--violet);
+    color: white;
     width: 50%;
     height: 25%;
     display: flex;
@@ -401,8 +402,6 @@ a {
 .input-container input[type=email] {
     display: block;
 }
-
-
 
 
 /* Items that will be not displayed in desktop view */
@@ -834,6 +833,7 @@ a {
     text-align: center;
 }
 
+
 /* Review section */
 .review__comments {
     position: absolute;
@@ -889,7 +889,44 @@ a {
     font-weight: bold;
 }
 
+/* Contact form navigation btn */
+.contact-form-nav {
+    position: sticky;
+    top: 20px;
+    right: 0px;
+    float: right;
+    z-index: 100;
+    margin: 2rem 1rem;
+}
+
+.contact-form-nav-btn {
+    color: white;
+    background-color: var(--violet);
+    padding: 0.5rem;
+    border-radius: 5px;
+    transition: 0.1s linear;
+}
+
+.contact-form-nav-btn:hover {
+    background-color: var(--navy);
+}
+
+/* Review a product */
+.review-product {
+    /* padding: 1rem; */
+    width: 100%;
+    margin: 1.5rem;
+}
+
+.review-product-btn {
+    background-color: var(--violet);
+}
+
 @media only screen and (max-width:750px) {
+
+    body {
+        overflow-x: hidden;
+    }
 
     /* Typography */
     .txt--header {
@@ -985,6 +1022,7 @@ a {
 
     .card--secondary {
         width: 200px;
+        height: 250px;
     }
 
     .card__img--secondary {
@@ -1000,6 +1038,7 @@ a {
     .card__navigation-link {
         color: white;
     }
+
 
 
     /* Home page */
@@ -1042,6 +1081,12 @@ a {
     .catalogue__items-container {
         width: 100%;
         flex-wrap: wrap;
+    }
+
+    /* Catalogue filter mobile item */
+    .catalogue-filter-btn {
+        position: absolute;
+        top: 550px;
     }
 
     /* Basket page */
