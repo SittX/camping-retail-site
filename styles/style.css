@@ -14,7 +14,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: var(--font);
+    font-family: 'Poppins', sans-serif;
 }
 
 ul,
@@ -442,25 +442,8 @@ a {
     align-items: center;
     flex-wrap: nowrap;
     overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
     scroll-behavior: smooth;
     overflow-x: hidden;
-}
-
-.slide__container::-webkit-scrollbar {
-    height: 5px;
-    width: 2px;
-    border: 1px solid #d5d5d5;
-    background: #d5d5d5;
-}
-
-.slide__container::-webkit-scrollbar-track {
-    --webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-}
-
-.slide__container::-webkit-scrollbar-thumb {
-    background-color: var(--color-primary);
-    outline: 1px solid #eee;
 }
 
 .slide {
