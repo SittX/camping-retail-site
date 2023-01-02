@@ -569,7 +569,7 @@ a {
 /* Home page */
 /* Home page banner  */
 .banner {
-    background-image: url("/assets/images/camping_bg.jpg");
+    background-image: url("../assets/images/camping_bg.jpg");
     background-size: cover;
     background-position: bottom;
     height: 300px;
