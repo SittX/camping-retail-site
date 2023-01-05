@@ -432,7 +432,7 @@ a {
     position: absolute;
     display: flex;
     animation: autoplay infinite;
-    animation-duration: 25s;
+    animation-duration: 15s;
     animation-timing-function: linear;
 }
 
@@ -476,19 +476,19 @@ a {
     }
 
     20% {
-        right: -800px;
+        right: -300px;
     }
 
     40% {
-        right: -600px;
-    }
-
-    60% {
         right: -400px;
     }
 
+    60% {
+        right: -500px;
+    }
+
     80% {
-        right: -200px;
+        right: -600px;
     }
 
     100% {
