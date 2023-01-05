@@ -38,18 +38,18 @@ let catalogueFilterToggle = () => {
     }
 }
 
-// Product slider
-let slides = document.getElementsByClassName('slide');
-let slider = document.getElementById('slide__container');
+// // Product slider
+// let slides = document.getElementsByClassName('slide');
+// let slider = document.getElementById('slide__container');
 
-let buttonRight = document.getElementById('slider__right-arrow');
-let buttonLeft = document.getElementById('slider__left-arrow');
+// let buttonRight = document.getElementById('slider__right-arrow');
+// let buttonLeft = document.getElementById('slider__left-arrow');
 
-buttonLeft.addEventListener('click', function () {
-    slider.scrollLeft -= 125;
-})
+// buttonLeft.addEventListener('click', function () {
+//     slider.scrollLeft -= 125;
+// })
 
-buttonRight.addEventListener('click', function () {
-    slider.scrollLeft += 125;
-})
+// buttonRight.addEventListener('click', function () {
+//     slider.scrollLeft += 125;
+// })
 
