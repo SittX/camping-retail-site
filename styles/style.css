@@ -5,6 +5,7 @@
     --navy: #335d88;
     --green: rgb(129, 241, 129);
     --violet: rgb(126, 126, 247);
+    --grey: #e0e0e0;
 
     /* Font family */
     --font: 'Poppins', sans-serif;
@@ -59,7 +60,7 @@ a {
 
 .pdf__viewer {
     width: 80%;
-    height: 500px;
+    height: 600px;
     border-radius: 10px;
 }
 
@@ -83,6 +84,9 @@ a {
     text-decoration: line-through;
 }
 
+.txt--center {
+    text-align: center;
+}
 
 /* Card */
 .card__wrapper {
@@ -134,13 +138,12 @@ a {
     opacity: 1;
 }
 
-.card__overlay-text,
-.card__navigation-link {
+.card__overlay-text {
     color: white;
 }
 
 .card__navigation-link {
-    text-decoration: underline;
+    color: var(--black);
 }
 
 .card__navigation-link:hover {
@@ -559,6 +562,11 @@ a {
     align-items: center;
 }
 
+#copyright {
+    text-align: center;
+    margin: 1rem 0;
+}
+
 /* Home page */
 /*  banner  */
 .banner {
@@ -769,6 +777,59 @@ a {
     margin: 2rem 0;
 }
 
+.package__container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 1rem 2rem;
+    margin: 2rem;
+}
+
+.package {
+    width: 30%;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: var(--grey);
+    box-shadow: 3px 4px 24px -8px rgba(0, 0, 0, 0.74);
+    transition: box-shadow 0.1s linear;
+}
+
+.package:hover {
+    box-shadow: 3px 4px 26px 0px rgba(0, 0, 0, 0.77);
+}
+
+.package__title {
+    font-size: 1.5rem;
+    font-weight: 550;
+    margin: 0.5rem 0;
+}
+
+.package__price {
+    font-size: 1.25rem;
+    margin: 0.5rem 0;
+    color: var(--violet);
+}
+
+.package__description {
+    font-size: 1rem;
+}
+
+.package__btn {
+    width: 150px;
+    font-size: 1rem;
+    margin: 1rem;
+    background-color: var(--navy);
+    color: white;
+}
+
+.package__items {
+    margin: 1rem 0 0 7rem;
+    text-align: start;
+    list-style-position: inside;
+    height: 220px;
+}
 
 /* Reviews page */
 .reviews__container {
@@ -794,7 +855,7 @@ a {
     overflow: hidden;
     /* This enables the vertical scrolling for the review__comments element */
     overflow-y: scroll;
-    background-color: #cccbcb;
+    background-color: var(--grey);
     padding: 1rem;
     padding-bottom: 2rem;
     border-radius: 5px;
@@ -865,7 +926,7 @@ a {
     border-radius: 5px;
     padding: 1rem;
     margin-bottom: 1rem;
-    background-color: whitesmoke;
+    background-color: var(--grey);
 }
 
 .reply__mentioned {
@@ -1189,6 +1250,53 @@ a {
     .contact-form__textarea {
         width: 100%;
         height: 200px;
+    }
+
+    /* Offer and packages page */
+    .package__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        padding: 1rem 2rem;
+    }
+
+    .package {
+        width: 85%;
+        padding: .75rem;
+        margin: 1rem 0;
+    }
+
+    .package__title {
+        font-size: 1.2rem;
+        font-weight: 550;
+        margin: .25rem 0;
+    }
+
+    .package__price {
+        font-size: 1.1rem;
+        margin: 0.25rem 0;
+        color: var(--violet);
+    }
+
+    .package__description {
+        font-size: 1rem;
+    }
+
+    .package__btn {
+        width: 150px;
+        font-size: 1rem;
+        margin: 0.75rem;
+        background-color: var(--navy);
+        color: white;
+    }
+
+    .package__items {
+        margin: 0.5rem 0 0 4rem;
+        text-align: start;
+        list-style-position: inside;
+        height: 220px;
     }
 
     /* Plugins */

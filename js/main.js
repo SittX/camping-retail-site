@@ -37,3 +37,17 @@ let catalogueFilterToggle = () => {
         filter.style.display = "block";
     }
 }
+
+
+// Add to cart notication
+let addToCart = () => {
+    window.alert(
+        "Item added to the cart !"
+    )
+}
+
+// Redirect the user to basket page when they click on "Buy now" button on the packages 
+let redirectToBasket = () => {
+    // Redirect user to basket page
+    location.href = "basket.html";
+} 

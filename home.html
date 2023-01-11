@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <div class="modal__container" id="modal-container">
+    <!-- <div class="modal__container" id="modal-container">
         <div class="modal">
             <p class="modal__text">New deals and package are happening in this season of the year.</p>
             <p class="modal__text">Subscribe to our newsletter!</p>
@@ -24,7 +24,7 @@
             </form>
             <button class="btn btn--red" onclick="closeModal()">Close X </button>
         </div>
-    </div>
+    </div> -->
 
     <nav>
         <div class="nav__top-menu">
@@ -79,7 +79,7 @@
     </nav>
     <div class="banner">
         <p class="banner__header">Sales are happening</p>
-        <button class="btn btn--navy">Shop Now</button>
+        <a class="btn btn--navy" href="pages/offersAndPackages.html">Shop now</a>
     </div>
 
     <p class="txt--header">Best sellers</p>
@@ -89,21 +89,21 @@
                 <img src="assets/images/equipments/big_agnes_sleeping_bag.jpg" alt="product image" class="slider__img">
                 <div class="slide__details">
                     <p class="slide__product-name">Big Agnes sleeping bag</p>
-                    <a href="#" class="btn btn--navy">Add to Cart</a>
+                    <button class="btn btn--navy" onclick="addToCart()">Add to basket</button>
                 </div>
             </div>
             <div class="slide">
                 <img src="assets/images/equipments/BioLite_powerstation.jpg" alt="product image" class="slider__img">
                 <div class="slide__details">
                     <p class="slide__product-name">BioLite powerstation</p>
-                    <a href="#" class="btn btn--navy">Add to Cart</a>
+                    <button class="btn btn--navy" onclick="addToCart()">Add to basket</button>
                 </div>
             </div>
             <div class="slide">
                 <img src="assets/images/furnitures/Eureka_camp_table.jpg" alt="product image" class="slider__img">
                 <div class="slide__details">
                     <p class="slide__product-name">Eureka camp table</p>
-                    <a href="#" class="btn btn--navy">Add to Cart</a>
+                    <button class="btn btn--navy" onclick="addToCart()">Add to basket</button>
                 </div>
             </div>
             <div class="slide">
@@ -111,21 +111,21 @@
                     class="slider__img">
                 <div class="slide__details">
                     <p class="slide__product-name">Coghlan's flint striker</p>
-                    <a href="#" class="btn btn--navy">Add to Cart</a>
+                    <button class="btn btn--navy" onclick="addToCart()">Add to basket</button>
                 </div>
             </div>
             <div class="slide">
                 <img src="assets/images/kichenwares/eureka_camp_grill.jpg" alt="product image" class="slider__img">
                 <div class="slide__details">
                     <p class="slide__product-name">Eureka camp grill</p>
-                    <a href="#" class="btn btn--navy">Add to Cart</a>
+                    <button class="btn btn--navy" onclick="addToCart()">Add to basket</button>
                 </div>
             </div>
             <div class="slide">
                 <img src="assets/images/equipments/Sunnto_compass.jpg" alt="product image" class="slider__img">
                 <div class="slide__details">
                     <p class="slide__product-name">Sunnto compass</p>
-                    <a href="#" class="btn btn--navy">Add to Cart</a>
+                    <button class="btn btn--navy" onclick="addToCart()">Add to basket</button>
                 </div>
             </div>
         </div>
@@ -200,7 +200,10 @@
                 <strong>810 Route 17 North Paramus, New Jersey 07652</strong>
                 <br>
                 <img src="assets/icons/phone.svg" class="icon" alt="phone icon">
-                <strong>Phone: 1-201-445-5000</strong>
+                <strong><a href="tel:201-445-5000">Phone : 201-445-5000</a></strong>
+                <br>
+                <img src="assets/icons/mail.svg" class="icon" alt="mail icon">
+                <strong><a href="mailto: campmor@business.com">Email : campmor@business.com</a></strong>
             </p>
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3012.3099894228258!2d-74.08258138417366!3d40.97469247930423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2e4d70ccf188b%3A0x3a1c82332c66af9c!2s810%20NJ-17%2C%20Paramus%2C%20NJ%2007652%2C%20USA!5e0!3m2!1sen!2smm!4v1672460465950!5m2!1sen!2smm"
@@ -259,7 +262,21 @@
                     </li>
                 </ul>
             </div>
+            <div class="footer-menu__contacts">
+                <h3>Contacts</h3>
+                <ul>
+                    <li>
+                        <a href="mailto: campmor@business.com"><img src="assets/icons/mail.svg" alt="mail icon"
+                                class="icon"> Mail</a>
+                    </li>
+                    <li>
+                        <a href="tel:201-445-5000"><img src="assets/icons/phone.svg" alt="phone icon" class="icon">
+                            Phone call</a>
+                    </li>
+                </ul>
+            </div>
         </div>
+        <p id="copyright">&#169 2023 Campmor. All rights reserved</p>
     </footer>
     <script src="js/main.js"></script>
 </body>

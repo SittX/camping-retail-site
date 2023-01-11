@@ -75,7 +75,7 @@
                         class="slider__img">
                     <div class="slide__details">
                         <p class="slide__product-name">Big Agnes sleeping bag</p>
-                        <a href="#" class="btn btn--navy">Add to Cart</a>
+                        <button class="btn btn--navy" onclick="addToCart()">Add to basket</button>
                     </div>
                 </div>
                 <div class="slide">
@@ -83,7 +83,7 @@
                         class="slider__img">
                     <div class="slide__details">
                         <p class="slide__product-name">BioLite powerstation</p>
-                        <a href="#" class="btn btn--navy">Add to Cart</a>
+                        <button class="btn btn--navy" onclick="addToCart()">Add to basket</button>
                     </div>
                 </div>
                 <div class="slide">
@@ -91,7 +91,7 @@
                         class="slider__img">
                     <div class="slide__details">
                         <p class="slide__product-name">Eureka camp table</p>
-                        <a href="#" class="btn btn--navy">Add to Cart</a>
+                        <button class="btn btn--navy" onclick="addToCart()">Add to basket</button>
                     </div>
                 </div>
                 <div class="slide">
@@ -99,7 +99,7 @@
                         class="slider__img">
                     <div class="slide__details">
                         <p class="slide__product-name">Coghlan's flint striker</p>
-                        <a href="#" class="btn btn--navy">Add to Cart</a>
+                        <button class="btn btn--navy" onclick="addToCart()">Add to basket</button>
                     </div>
                 </div>
                 <div class="slide">
@@ -107,19 +107,70 @@
                         class="slider__img">
                     <div class="slide__details">
                         <p class="slide__product-name">Eureka camp grill</p>
-                        <a href="#" class="btn btn--navy">Add to Cart</a>
+                        <button class="btn btn--navy" onclick="addToCart()">Add to basket</button>
                     </div>
                 </div>
                 <div class="slide">
                     <img src="../assets/images/equipments/Sunnto_compass.jpg" alt="product image" class="slider__img">
                     <div class="slide__details">
                         <p class="slide__product-name">Sunnto compass</p>
-                        <a href="#" class="btn btn--navy">Add to Cart</a>
+                        <button class="btn btn--navy" onclick="addToCart()">Add to basket</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <p class="txt--header txt--center">Packages for customers</p>
+    <div class="package__container">
+        <div class="package">
+            <p class="package__title">Eco package</p>
+            <p class="package__price">$ 449.99</p>
+            <p class="package__description">Package for beginners who are new to camping</p>
+            <ol class="package__items">
+                <li class="package__list-item">MSR tent</li>
+                <li class="package__list-item">Coleman sleeping bag</li>
+                <li class="package__list-item">Goal Zero light latern</li>
+                <li class="package__list-item">UCO utility spork &#120; 2</li>
+                <li class="package__list-item">GSI Bowl &#120; 2</li>
+            </ol>
+            <button class="btn package__btn" onclick="redirectToBasket()">Buy Now</button>
+        </div>
+        <div class="package">
+            <p class="package__title">Traveller package</p>
+            <p class="package__price">$ 719.99</p>
+            <p class="package__description">Package for people who want to travel outdoors.</p>
+            <ol class="package__items">
+                <li class="package__list-item">MSR tent</li>
+                <li class="package__list-item">Egales Hammock</li>
+                <li class="package__list-item">Coleman Sleeping bag</li>
+                <li class="package__list-item">Goal Zero light latern</li>
+                <li class="package__list-item">Eureka camp grill</li>
+                <li class="package__list-item">UCO utility spork &#120; 2</li>
+                <li class="package__list-item">GSI Bowl &#120; 2</li>
+                <li class="package__list-item">GSI non-sticking frypan</li>
+            </ol>
+            <button class="btn package__btn" onclick="redirectToBasket()">Buy Now</button>
+        </div>
+        <div class="package">
+            <p class="package__title">Deluxe package</p>
+            <p class="package__price">$ 2599.99</p>
+            <p class="package__description">Package for beginners who are new to camping</p>
+            <ol class="package__items">
+                <li class="package__list-item">Cura outdoors tent</li>
+                <li class="package__list-item">APLS chair</li>
+                <li class="package__list-item">Big Agnes sleeping bag</li>
+                <li class="package__list-item">Biolite powerstation</li>
+                <li class="package__list-item">Goal Zero light latern</li>
+                <li class="package__list-item">Eureka camp grill</li>
+                <li class="package__list-item">GSI bowl x 2</li>
+                <li class="package__list-item">UCO utility spork x 2</li>
+                <li class="package__list-item">GSI non-sticking frypan</li>
+            </ol>
+            <button class="btn package__btn" onclick="redirectToBasket()">Buy Now</button>
+        </div>
+    </div>
+
 
     <div class="container promotion-text">
         <p class="txt--header"><span class="txt--red"> 20% off </span>sales are happening right now.</p>
@@ -134,68 +185,71 @@
                 class="card__img card__img--secondary">
             <p class="card__text">Coleman Blue Bandit sleeping bag</p>
             <p class="card__text "><span class="txt--red txt--line-through">54.99$</span> 34.99$ </p>
-            <button class="btn btn--violet">Add to basket</button>
+            <button class="btn btn--violet" onclick="addToCart()">Add to basket</button>
         </div>
         <div class="card card--secondary">
             <img src="../assets/images/equipments/big_agnes_sleeping_bag.jpg" alt="big agnes sleeping bag"
                 class="card__img card__img--secondary">
             <p class="card__text">Big Agnes sleeping bag</p>
             <p class="card__text "><span class="txt--red txt--line-through">329.99$</span> 229.99$ </p>
-            <button class="btn btn--violet">Add to basket</button>
+            <button class="btn btn--violet" onclick="addToCart()">Add to basket</button>
         </div>
         <div class="card card--secondary">
             <img src="../assets/images/furnitures/Eureka_camp_table.jpg" alt="Goal zero light latern"
                 class="card__img card__img--secondary">
             <p class="card__text">Eureka camp table</p>
             <p class="card__text "><span class="txt--red txt--line-through">124.95$</span> 93.71$ </p>
-            <button class="btn btn--violet">Add to basket</button>
+            <button class="btn btn--violet" onclick="addToCart()">Add to basket</button>
         </div>
         <div class="card card--secondary">
             <img src="../assets/images/equipments/goal_zero_light_latern.jpg" alt="Sunnto compass"
                 class="card__img card__img--secondary">
             <p class="card__text">Goal Zero light latern</p>
             <p class="card__text "><span class="txt--red txt--line-through">69.95$</span> 62.95$ </p>
-            <button class="btn btn--violet">Add to basket</button>
+            <button class="btn btn--violet" onclick="addToCart()">Add to basket</button>
         </div>
         <div class="card card--secondary">
             <img src="../assets/images/equipments/Sunnto_compass.jpg" alt="Eureka camp grill"
                 class="card__img card__img--secondary">
             <p class="card__text">Suunto M-3 G compass</p>
             <p class="card__text "><span class="txt--red txt--line-through">79.00$</span> 75.00$ </p>
-            <button class="btn btn--violet">Add to basket</button>
+            <button class="btn btn--violet" onclick="addToCart()">Add to basket</button>
         </div>
         <div class="card card--secondary">
             <img src="../assets/images/survival_kits/UCO_match.jpg" alt="Eureka camp grill"
                 class="card__img card__img--secondary">
             <p class="card__text">UCO match Containers w/25 matches</p>
             <p class="card__text "><span class="txt--red txt--line-through">8.99$</span> 3.99$ </p>
-            <button class="btn btn--violet">Add to basket</button>
+            <button class="btn btn--violet" onclick="addToCart()">Add to basket</button>
         </div>
         <div class="card card--secondary">
             <img src="../assets/images/equipments/coura_tents.jpg" alt="Eureka camp grill"
                 class="card__img card__img--secondary">
             <p class="card__text">Cura Cottage by Cura outdoors</p>
             <p class="card__text "><span class="txt--red txt--line-through">1,799.99$</span> 1,299.99$ </p>
-            <button class="btn btn--violet">Add to basket</button>
+            <button class="btn btn--violet" onclick="addToCart()">Add to basket</button>
         </div>
         <div class="card card--secondary">
             <img src="../assets/images/equipments/MSR_tent.jpg" alt="Eureka camp grill"
                 class="card__img card__img--secondary">
             <p class="card__text">MSR Hubba Hubba 2 Tent V9</p>
             <p class="card__text "><span class="txt--red txt--line-through">479.95$</span> 349.99$ </p>
-            <button class="btn btn--violet">Add to basket</button>
+            <button class="btn btn--violet" onclick="addToCart()">Add to basket</button>
         </div>
         <div class="card card--secondary">
             <img src="../assets/images/equipments/eagles_nest_hammock.jpg" alt="Eureka camp grill"
                 class="card__img card__img--secondary">
             <p class="card__text">Eagles Nest outfitters SingleNet Hammock</p>
             <p class="card__text "><span class="txt--red txt--line-through">54.95$</span> 41.21$ </p>
-            <button class="btn btn--violet">Add to basket</button>
+            <button class="btn btn--violet" onclick="addToCart()">Add to basket</button>
         </div>
     </div>
 
+
+
     <div class="container pdf__container">
-        <p class="pdf__text">If this is your first time camping, here is our camping equipment checklist to make sure
+        <p class="pdf__text">If this is your first time camping, here is our camping equipment checklist to make
+            sure
             that you don't forget important items on your trip.</p>
         <iframe src="../assets/camping_checklist.pdf" class="pdf__viewer"></iframe>
     </div>
@@ -251,7 +305,21 @@
                     </li>
                 </ul>
             </div>
+            <div class="footer-menu__contacts">
+                <h3>Contacts</h3>
+                <ul>
+                    <li>
+                        <a href="mailto: campmor@business.com"><img src="../assets/icons/mail.svg" alt="mail icon"
+                                class="icon"> Mail</a>
+                    </li>
+                    <li>
+                        <a href="tel:201-445-5000"><img src="../assets/icons/phone.svg" alt="phone icon" class="icon">
+                            Phone call</a>
+                    </li>
+                </ul>
+            </div>
         </div>
+        <p id="copyright">&#169 2023 Campmor. All rights reserved</p>
     </footer>
     <script src="../js/main.js"></script>
 </body>
