@@ -1,10 +1,11 @@
 // Navbar hamburger menu open and close event listeners 
 let menu = document.getElementById("mobile-menu");
-let closeMenu = () => {
-    menu.style.right = "-1080px";
-}
 let openMenu = () => {
-    menu.style.right = "0";
+    menu.style.display = " block";
+}
+
+let closeMenu = () => {
+    menu.style.display = "none";
 }
 
 // Home page modal menu event listeners
