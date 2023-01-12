@@ -31,13 +31,11 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 2rem;
 }
 
 .iframe-video {
-    width: 60%;
-    height: 350px;
-    border-radius: 10px;
+    width: 100%;
+    height: 500px;
 }
 
 /* Map */
@@ -84,8 +82,15 @@ a {
     text-decoration: line-through;
 }
 
+.txt--highlight {
+    font-weight: bold;
+    font-style: italic;
+    margin: 1rem;
+}
+
 .txt--center {
     text-align: center;
+    margin: 0.5rem;
 }
 
 /* Card */
@@ -404,9 +409,15 @@ a {
 
 .slider__wrapper {
     position: absolute;
+    margin: auto;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 50%;
     display: flex;
     animation: autoplay infinite;
-    animation-duration: 30s;
+    animation-duration: 15s;
     animation-timing-function: linear;
 }
 
@@ -446,47 +457,19 @@ a {
 
 @keyframes autoplay {
     0% {
-        right: 0px;
+        left: 0px;
     }
 
-    10% {
-        right: -50px;
-    }
-
-    20% {
-        right: -100px;
-    }
-
-    30% {
-        right: -150px;
-    }
-
-    40% {
-        right: -200px;
+    25% {
+        left: -400px;
     }
 
     50% {
-        right: -250px;
-    }
-
-    60% {
-        right: -300px;
-    }
-
-    70% {
-        right: -350px;
-    }
-
-    80% {
-        right: -400px;
-    }
-
-    90% {
-        right: -450px;
+        left: -600px;
     }
 
     100% {
-        right: 0px;
+        left: 0px;
     }
 }
 
@@ -629,6 +612,19 @@ a {
     position: absolute;
     top: 0;
 }
+
+/* Furniture page */
+.showcase-txt {
+    border: 2px solid black;
+    color: white;
+    width: 60%;
+    margin: auto;
+    margin: 2rem auto;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: var(--navy);
+}
+
 
 /* Basket page */
 .cart {
@@ -1129,7 +1125,7 @@ a {
     /* Catalogue filter mobile item */
     .catalogue-filter-btn {
         position: absolute;
-        top: 550px;
+        top: 650px;
     }
 
     /* Basket page */
@@ -1299,9 +1295,21 @@ a {
         height: 220px;
     }
 
+    /* Furniture page */
+    .showcase-txt {
+        display: none;
+    }
+
     /* Plugins */
+    .iframe-video-container {
+        margin: 1rem;
+    }
+
     .iframe-video {
         width: 100%;
+        height: 300px;
+        border: none;
+        border-radius: 5px;
     }
 
     .pdf__viewer {
