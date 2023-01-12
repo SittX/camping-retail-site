@@ -25,6 +25,10 @@ a {
     color: black;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 /* Plugins */
 /* video */
 .iframe-video-container {
@@ -208,8 +212,8 @@ a {
 .modal {
     background-color: var(--violet);
     color: white;
-    width: 50%;
-    height: 25%;
+    width: auto;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -234,6 +238,9 @@ a {
     outline: none;
 }
 
+.modal__form input[type=email] {
+    font-size: 1rem;
+}
 
 /* Button */
 .btn {
